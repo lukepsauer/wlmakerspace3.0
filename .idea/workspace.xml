@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dash.erb" afterPath="$PROJECT_DIR$/views/dash.erb" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -576,7 +574,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453768996097</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed Slack URL">
+      <created>1453772026744</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1453772026744</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -618,7 +622,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tesint" />
     <MESSAGE value="Github&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Github&#10;" />
+    <MESSAGE value="Fixed Slack URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Slack URL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
