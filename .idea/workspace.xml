@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="" />
+    <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blogMake.erb" afterPath="$PROJECT_DIR$/views/blogMake.erb" />
+    </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -107,10 +109,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6891892">
+            <state vertical-scroll-proportion="-7.581081">
               <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
               <folding />
             </state>
@@ -142,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogMake.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blogMake.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.048388">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.7530266">
+              <caret line="53" column="89" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -242,11 +244,11 @@
         <option value="$PROJECT_DIR$/views/dash.erb" />
         <option value="$PROJECT_DIR$/public/js/js.js" />
         <option value="$PROJECT_DIR$/migrations/002_create_posts.rb" />
-        <option value="$PROJECT_DIR$/views/blogMake.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="dbtable:/e38a2ed2/d920d8bd-132c-48fd-bdec-65351411069f/dfjkm7hd5p5kmn.public.users" />
         <option value="$PROJECT_DIR$/views/blog.erb" />
         <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/views/blogMake.erb" />
       </list>
     </option>
   </component>
@@ -688,14 +690,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1062" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25886145" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25778732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25778732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30819672" sideWeight="0.49148935" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1101,18 +1103,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
+    <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.048388">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
+        <state vertical-scroll-proportion="-7.581081">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
+    <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6891892">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.7530266">
+          <caret line="53" column="89" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
           <folding />
         </state>
       </provider>
