@@ -8,6 +8,7 @@ gem 'bcrypt'
 gem 'passenger'
 gem 'cloudinary'
 gem 'pony'
+gem 'motion-markdown-it'
 
 
 

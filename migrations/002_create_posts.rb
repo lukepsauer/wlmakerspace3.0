@@ -8,6 +8,7 @@ Sequel.migration do
       String :content
       Time :date
       String :type
+      Integer :draft
 
 
     end

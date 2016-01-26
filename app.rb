@@ -34,10 +34,11 @@ get '/dashboard' do
 end
 get '/blog' do
   @posts = Post.where(:type => "blog")
-  @posts = @posts.reverse_order
   if session[:visited]
+    @posts.where(:draft => 0)
     @user = User.first(:id => session[:id])
   end
+  @posts = @posts.reverse_order
   erb :blog
 end
 get '/settings' do
@@ -142,17 +143,31 @@ post '/test/email' do
   puts "Hey!"
   redirect '/#contact'
 end
-post '/post/create' do
+post '/blog/new' do
   time = Time.new
   i = Post.new
   i.title = params[:title]
-  i.content = params[:content]
-  name = Cloudinary::Uploader.upload(params['myfile'][:tempfile],api_key: ENV["Cloudinary_api"], api_secret: ENV["Cloudinary_secret"], cloud_name: ENV["Cloudinary_name"])
-  i.url = name["url"]
-  #i.url = params[:url]
+  params[:content] = MarkdownIt::Parser.new(:commonmark, {linkify: true}).render(text.force_encoding('UTF-8'))
+  rendered.sub!(/\[more\].*/m, %(<a href="/blog/v/#{i.id}" class="ttp" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Read More"><span class="label label-default"><i class="fa fa-ellipsis-h fa-lg"></i></span></a>)) if truncate
+  rendered.gsub!("[fig]", "<figure>")
+  rendered.gsub!(/\[cap\s([^\]]*)\]/) { "<figcaption>#{$1}</figcaption></figure>" }
+  rendered.gsub!("http://i.imgur", "https://i.imgur")
+  rendered.gsub!(/i\.imgur\.com\/([^.]{7})\.(\w+)/) { "i.imgur.com/#{$1}l.#{$2}" }
+  rendered.gsub!(/\[more\]/, '')
+  i.content = rendered
+  i.draft = params[:draft]
   i.date = time
   i.type = "blog"
   i.save
+  if blog.save
+    flash[:success] = "Blog successfully #{blog.draft ? 'saved' : 'published'}."
+    if ENV['SLACK_URL']
+      payload = %({"channel": "#blogstuffs", "text": "Looks like *#{current_user.realName}* just *#{blog.draft ? 'drafted' : 'published'}* a *new* blog entry: _'#{blog.title}'_. \\n<#{ENV['SECURE_HOST']}/blog/v/#{blog.id}|Take a look>"})
+      Net::HTTP.post_form URI(ENV['SLACK_URL']), {'payload' => payload}
+    end
+  else
+    flash[:error] = blog.errors.full_messages.join('<br/>')
+  end
   redirect '/blog'
 end
 post '/pass/edit' do

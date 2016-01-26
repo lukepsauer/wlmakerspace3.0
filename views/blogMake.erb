@@ -1,0 +1,68 @@
+<form id="blog-make-form" action="<%= @isEdit ? "/blog/edit/#{@blog.id}" : "/blog/new" %>" method="post" class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputTitle">Title</label>
+
+    <div class="controls">
+      <input type="text" id="inputTitle" name="title" class="form-control" value="<%= @isEdit ? @blog.title : '' %>" placeholder="Title">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputDate">At time</label>
+
+    <div class="controls">
+      <input type="text" class="form-control" id="inputDate" name="date" value="<%= @isEdit ? Time.at(@blog.date).to_s : Time.now.to_s %>">
+      <% #Time here is for display purposes only. The real time is set in the post.  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="content">Message</label>
+
+    <div class="controls">
+      <textarea rows="10" class="form-control" id="content" name="content"><%= @isEdit ? @blog.content : '' %></textarea>
+    </div>
+  </div>
+  <br/>
+</form>
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Formatting Help
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <%= partial :markdown %>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<% if @isEdit %>
+    <form method="post" action="/blog/del/<%= @blog.id %>">
+<% end %>
+<div class="control-group">
+  <div class="controls">
+    <button type="submit" form="blog-make-form" name="draft" class="btn btn-info"><%= (@isEdit && !@blog.draft) ? '<span class="fa fa-eye-slash"></span> Demote to Draft' : '<span class="fa fa-pencil-square-o"></span> Save as Draft' %></button>
+    <button type="submit" form="blog-make-form" name="publish" class="btn btn-success">
+      <span class="fa fa-cloud-upload"></span> Publish Post
+    </button>
+    <% if @isEdit %>
+        <button class="btn btn-danger" onclick="return confirm('Delete Post?');"><span class="fa fa-trash"></span>
+          Delete Post
+        </button>
+    <% end %>
+  </div>
+</div>
+<% if @isEdit %>
+    </form>
+<% end %>
+
+<script>
+    $(function () {
+        $("#collapseOne").collapse('hide');
+    });
+</script>
