@@ -14,7 +14,7 @@
 
 <%if session[:visited]%>
     <%if @user.perm > 2  %>
-        <a id="newblogpost">New Post <i class="fa fa-plus"></i></a>
+        <a id="newblogpost" href="/blog/new">New Post <i class="fa fa-plus"></i></a>
           <hr>
     <% end %>
 <% end %>

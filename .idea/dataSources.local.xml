@@ -2,5 +2,14 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="main" uuid="e9295b89-94f1-4fc4-9571-370d31e3d26c" />
+    <data-source name="PostgreSQL - dfjkm7hd5p5kmn@ec2-54-225-195-249.compute-1.amazonaws.com" uuid="d920d8bd-132c-48fd-bdec-65351411069f">
+      <secret-storage>master_key</secret-storage>
+      <user-name>mldqnhcqtdakqk</user-name>
+      <schema-pattern>dfjkm7hd5p5kmn.pg_catalog dfjkm7hd5p5kmn.public</schema-pattern>
+      <default-schemas>dfjkm7hd5p5kmn.pg_catalog dfjkm7hd5p5kmn.public</default-schemas>
+      <ssl-config>
+        <enabled>true</enabled>
+      </ssl-config>
+    </data-source>
   </component>
 </project>

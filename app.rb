@@ -41,6 +41,10 @@ get '/blog' do
   @posts = @posts.reverse_order
   erb :blog
 end
+  get '/blog/new' do
+    @isEdit = false # I use the same view for both creating and editing the blog, but there need to be slightly different controls
+    erb :blogMake
+  end
 get '/settings' do
   if session[:visited]
     puts @test
