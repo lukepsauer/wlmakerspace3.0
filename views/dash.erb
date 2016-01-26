@@ -18,14 +18,6 @@
     <div class="subtitle">Upcoming Training Sessions</div>
     <hr>
       <div class="font caption">Coming Soon... Maybe...</div>
-    <div id="authorize-div" style="display: none">
-      <span>Authorize access to Google Calendar API</span>
-      <!--Button for the user to click to initiate auth sequence -->
-      <button id="authorize-button" onclick="handleAuthClick(event)">
-        Authorize
-      </button>
-    </div>
-    <pre class="caption" id="output"></pre>
   </div>
   <div class="col-md-6">
     <div class="subtitle">Makerspace Updates</div>
@@ -114,7 +106,17 @@
   <div class="center">
     <div class="row vdivide">
 
-      <div class="col-md-3 caption font"></div>
+      <div class="col-md-3 caption font">
+
+        <div id="authorize-div" style="">
+          <span>Authorize access to Google Calendar API</span>
+          <!--Button for the user to click to initiate auth sequence -->
+          <button id="authorize-button" onclick="handleAuthClick(event)">
+            Authorize
+          </button>
+        </div>
+        <pre class="caption" id="output"></pre>
+      </div>
       <div class="col-md-6">
       </div>
       <div class="col-md-3">
