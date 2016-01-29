@@ -13,10 +13,8 @@
 <div class="center">
 
 <%if session[:visited]%>
-    <%if @user.perm > 2  %>
         <a id="newblogpost" href="/blog/new">New Post <i class="fa fa-plus"></i></a>
           <hr>
-    <% end %>
 <% end %>
 </div>
 
@@ -32,6 +30,7 @@
        <%if session[:visited]%>
         <%if @user.perm >= 2 %>
            <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
+                  <a class="edit" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
         <%end%>
        <%end%>
         </h3>
@@ -43,7 +42,7 @@
         <%= post.content %>
         </div>
       </div>
-      <div class="panel-footer font"><%= post.date.strftime("Posted on %B %-d, %Y at %-l:%M %p") %></div>
+      <div class="panel-footer font"><%= post.date.strftime("Posted on %B %-d, %Y") %></div>
 
     </div>
 
@@ -77,6 +76,7 @@
 
 
 
+<!--
 
 <%if session[:visited] && @user.perm>2%>
 <div class="modal fade" id="postCreate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -118,4 +118,4 @@
     </div>
   </div>
 </div>
-<%end%>
+<%end%>-->

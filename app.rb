@@ -149,24 +149,17 @@ post '/test/email' do
 end
 post '/blog/new' do
   time = Time.new
-  i = Post.new
-  i.title = params[:title]
-  params[:content] = MarkdownIt::Parser.new(:commonmark, {linkify: true}).render(text.force_encoding('UTF-8'))
-  rendered.sub!(/\[more\].*/m, %(<a href="/blog/v/#{i.id}" class="ttp" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="Read More"><span class="label label-default"><i class="fa fa-ellipsis-h fa-lg"></i></span></a>)) if truncate
-  rendered.gsub!("[fig]", "<figure>")
-  rendered.gsub!(/\[cap\s([^\]]*)\]/) { "<figcaption>#{$1}</figcaption></figure>" }
-  rendered.gsub!("http://i.imgur", "https://i.imgur")
-  rendered.gsub!(/i\.imgur\.com\/([^.]{7})\.(\w+)/) { "i.imgur.com/#{$1}l.#{$2}" }
-  rendered.gsub!(/\[more\]/, '')
-  i.content = rendered
-  i.draft = params[:draft]
-  i.date = time
-  i.type = "blog"
-  i.save
+  blog = Post.new
+  blog.title = params[:title]
+  blog.content = params[:content]
+  blog.draft = params[:draft]
+  blog.date = time
+  blog.type = "blog"
+  blog.save
   if blog.save
     flash[:success] = "Blog successfully #{blog.draft ? 'saved' : 'published'}."
     if ENV['SLACK_URL']
-      payload = %({"channel": "#blogstuffs", "text": "Looks like *#{current_user.realName}* just *#{blog.draft ? 'drafted' : 'published'}* a *new* blog entry: _'#{blog.title}'_. \\n<#{ENV['SECURE_HOST']}/blog/v/#{blog.id}|Take a look>"})
+      payload = %({"channel": "#blogstuffs", "text": "Looks like *#{current_user.realName}* just *#{blog.draft == 1 ? 'drafted' : 'published'}* a *new* blog entry: _'#{blog.title}'_."})
       Net::HTTP.post_form URI(ENV['SLACK_URL']), {'payload' => payload}
     end
   else
