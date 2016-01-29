@@ -148,12 +148,11 @@ post '/test/email' do
   redirect '/#contact'
 end
 post '/blog/new' do
-  time = Time.new
   blog = Post.new
   blog.title = params[:title]
   blog.content = params[:content]
-  blog.draft = params[:draft]
-  blog.date = time
+  blog.date =params[:date]
+  blog.draft   = params.has_key? 'draft'? 1:0
   blog.type = "blog"
   blog.save
   if blog.save
