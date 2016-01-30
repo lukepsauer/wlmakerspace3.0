@@ -1603,8 +1603,9 @@
       <column name="title" sqlType="text" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="url" sqlType="text" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="content" sqlType="text" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
-      <column name="date" sqlType="timestamp" precision="29" scale="6" nullable="true" jdbcType="93"/>
+      <column name="date" sqlType="date" precision="13" scale="0" nullable="true" jdbcType="91"/>
       <column name="type" sqlType="text" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
+      <column name="draft" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="posts_pkey" columns="id"/>
     </table>
     <table name="posts_id_seq" schema="public" catalog="dfjkm7hd5p5kmn" type="SEQUENCE">

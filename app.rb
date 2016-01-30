@@ -154,8 +154,10 @@ post '/blog/new' do
   blog.title = params[:title]
   blog.content = params[:content]
   blog.date =params[:date]
-  blog.draft   = params.has_key? 'draft'? 1:0
+=begin
+  blog.draft   = (params.has_key? 'draft')? 1:0
   blog.type = "blog"
+=end
   blog.save
   if blog.save
     flash[:success] = "Blog successfully #{blog.draft ? 'saved' : 'published'}."

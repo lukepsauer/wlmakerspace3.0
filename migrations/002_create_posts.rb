@@ -9,8 +9,6 @@ Sequel.migration do
       Date :date
       String :type
       Integer :draft
-
-
     end
   end
 
