@@ -42,6 +42,8 @@ get '/blog' do
   erb :blog
 end
   get '/blog/new' do
+    @user = User.first(:id => session[:id])
+    @user.perm == 3 ? @publishC = true :  @publishC = false
     @isEdit = false # I use the same view for both creating and editing the blog, but there need to be slightly different controls
     erb :blogMake
   end
