@@ -160,7 +160,6 @@ post '/blog/new' do
 =end
   blog.save
   if blog.save
-    flash[:success] = "Blog successfully #{blog.draft ? 'saved' : 'published'}."
     if ENV['SLACK_URL']
       payload = %({"channel": "#blogstuffs", "text": "Looks like *#{current_user.realName}* just *#{blog.draft == 1 ? 'drafted' : 'published'}* a *new* blog entry: _'#{blog.title}'_."})
       Net::HTTP.post_form URI(ENV['SLACK_URL']), {'payload' => payload}
