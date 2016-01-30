@@ -21,7 +21,7 @@
     <label class="control-label" for="inputDate">At Date</label>
 
     <div class="controls">
-      <input type="text" class="form-control" id="inputDate" name="date" value="<%= @isEdit ? Date.at(@blog.date).to_s : Date.today.to_s %>">
+      <input type="text" class="form-control" id="inputDate" name="date" value="<%= @isEdit ? @blog.date.to_s : Date.today.to_s %>">
       <% #Time here is for display purposes only. The real time is set in the post.  %>
     </div>
   </div>
