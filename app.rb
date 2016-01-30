@@ -154,10 +154,8 @@ post '/blog/new' do
   blog.title = params[:title]
   blog.content = params[:content]
   blog.date =params[:date]
-=begin
   blog.draft   = (params.has_key? 'draft')? 1:0
   blog.type = "blog"
-=end
   blog.save
   if blog.save
     if ENV['SLACK_URL']
