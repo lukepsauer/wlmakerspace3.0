@@ -166,7 +166,6 @@ post '/blog/new' do
       Net::HTTP.post_form URI(ENV['SLACK_URL']), {'payload' => payload}
     end
   else
-    flash[:error] = blog.errors.full_messages.join('<br/>')
   end
   redirect '/blog'
 end
