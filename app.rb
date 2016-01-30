@@ -47,6 +47,13 @@ end
     @isEdit = false # I use the same view for both creating and editing the blog, but there need to be slightly different controls
     erb :blogMake
   end
+  get '/blog/edit/:id' do
+    @blog = Post.first(:id => params[:id])
+    @user = User.first(:id => session[:id])
+    @user.perm == 3 ? @publishC = true :  @publishC = false
+    @isEdit = true # I use the same view for both creating and editing the blog, but there need to be slightly different controls
+    erb :blogMake
+  end
 get '/settings' do
   if session[:visited]
     puts @test
