@@ -122,10 +122,14 @@
 <div class="col-sm-8 blog-main">
   <% @posts.reverse_order.each do |post| %>
       <div class="blog-post">
-        <h2 class="blog-post-title"><%= post.title %><%if @user.perm >= 2 %>
-              <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
-              <a class="edit" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
-          <%end%></h2>
+        <h2 class="blog-post-title"><%= post.title %>
+          <%if session[:visited]%>
+              <%if @user.perm >= 2 %>
+                  <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
+                  <a class="edit" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
+              <%end%>
+          <%end%>
+        </h2>
         <p class="blog-post-meta"><%= post.date.strftime("Posted on %B %-d, %Y") %> by <a href="#">Mark</a></p>
         <div class="caption font">
           <%= post.content %>
