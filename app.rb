@@ -163,6 +163,7 @@ class WLMS < Sinatra::Base
     blog.date =params[:date]
     blog.draft   = (params.has_key? 'draft')? 1:0
     blog.type = "blog"
+    blog.author = session[:id]
     blog.save
     if blog.save
       if ENV['SLACK_URL']

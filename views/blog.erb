@@ -142,15 +142,18 @@
     <ul class="list-unstyled">
 
 
-      <li><span class="blog-readable"><i class="fa fa-user"></i> By Julia</span></li>
+      <li><span class="blog-readable"><i class="fa fa-user"></i> By <%=@authors.first(:id => post.author).firstname %></span></li>
 
     </ul>
   </div>
 
   <div class="col-lg-10 col-md-9 col-sm-9">
     <h3><a href="/blog/v/<%= post.id%>"><%= post.title%></a>
+      <% if post.draft == 1 %>
+          <small>(Draft)</small>
+      <% end %>
       <%if session[:visited]%>
-          <%if @user.perm >= 2 %>
+          <%if @user.perm >= 2 || (@user.id == post.author && post.draft==0) %>
               <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
               <a class="edit" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
           <%end%>
