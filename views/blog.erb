@@ -135,6 +135,37 @@
           <%= post.content %>
         </div>
       </div><!-- /.blog-post -->
-  <% end %>
 
 </div>
+
+<article class="row">
+  <div class="col-lg-2 col-md-3 col-sm-3">
+    <p class="clearfix">
+      <span class="day"><%= post.date.strftime("%d") %></span><span class="month-year"><b><%= post.date.strftime("%^b") %></b><br><%= post.date.strftime("%Y") %></span>
+    </p>
+    <ul class="list-unstyled">
+
+
+      <li><span class="blog-readable"><i class="fa fa-user"></i> By Julia</span></li>
+
+    </ul>
+  </div>
+  <div class="col-lg-10 col-md-9 col-sm-9">
+    <h3><a href="/blog/v/<%= post.id %>"><%= post.title %></a>
+    </h3>
+    <hr>
+    <div class="post-entry">
+
+      <p><%= post.content %></p>
+      <p></p><figure>
+      <img src="https://i.imgur.com/bUUtQJDl.jpg" alt="alt">
+      <figcaption>Luke and Greg scouting before matches</figcaption></figure><p></p>
+      <p><a href="/blog/v/<%= post.id %>" class="ttp" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="" data-original-title="Read More"><span class="label label-default"><i class="fa fa-ellipsis-h fa-lg"></i></span></a>
+        <script>
+          $(".ttp").tooltip()
+        </script>
+
+      </p></div>
+  </div>
+</article>
+  <% end %>
