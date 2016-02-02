@@ -230,61 +230,6 @@ footer {
     font-size: 23px;
     color:black;
 }
-.day {
-    font-weight: bold;
-    vertical-align: middle;
-    float: left;
-    line-height: 54px;
-    padding-right: 5px;
-    color:black;
-    font-size: 64px;
-}
-.month-year {
-    line-height: 26px;
-    font-size: 3rem;
-    float: left;
-}
-.blog-draft {
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAFtJREFUGBmN0NENwCAIRdHaqdibJdiFIdpeEkhNpJYfRE+exqGq1/GUiNCmMrOaT1Y7hBnuHokMWe+k3IvEHOgrxI0T7BABBb9QwR0K+AdVIous7qvqjcAOcXYDAhkkQwkp6B8AAAAASUVORK5CYII=) repeat;
-}
-
-.blog-draft .blog-readable {
-    background-color: rgba(255,255,255,.7)
-}
-.post-entry h1 span,
-.post-entry h2 span,
-.post-entry h3 span,
-.post-entry h4 span,
-.post-entry h5 span,
-.post-entry h6 span {
-    display:none;
-}
-
-.post-entry figure img {
-    max-width: 500px;
-    max-height: 400px;
-}
-
-.post-entry img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    margin: 10px;
-    border-radius: 2px;
-}
-
-.post-entry figure figcaption {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    font-size: 85%;
-    color: #5b5d63;
-}
-ul.list-unstyled button.btn-sm {
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
 .huge{
     font-size:104px;
     padding: 30px;
