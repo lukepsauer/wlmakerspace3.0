@@ -27,6 +27,17 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 style="text-align: left" class="panel-title font subtitle"><%= post.title %>
+              <div class="col-lg-2 col-md-3 col-sm-3">
+                <p class="clearfix">
+                  <span class="day">09</span><span class="month-year"><b>JAN</b><br>2016</span>
+                </p>
+                <ul class="list-unstyled">
+
+
+                  <li><span class="blog-readable"><i class="fa fa-user"></i> By Julia</span></li>
+
+                </ul>
+              </div>
               <%if session[:visited]%>
                   <%if @user.perm >= 2 %>
                       <a  class="delete"><i class="fa fa-times fa-lg"></i></a>

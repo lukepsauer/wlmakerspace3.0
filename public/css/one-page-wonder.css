@@ -230,6 +230,20 @@ footer {
     font-size: 23px;
     color:black;
 }
+.day {
+    font-weight: bold;
+    vertical-align: middle;
+    float: left;
+    line-height: 54px;
+    padding-right: 5px;
+    color:black;
+    font-size: 64px;
+}
+.month-year {
+    line-height: 26px;
+    font-size: 3rem;
+    float: left;
+}
 .huge{
     font-size:104px;
     padding: 30px;
