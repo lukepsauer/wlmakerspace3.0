@@ -216,8 +216,8 @@
       <file leaf-file-name="blog.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/blog.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.765306">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+            <state vertical-scroll-proportion="-7.714286">
+              <caret line="161" column="10" selection-start-line="161" selection-start-column="10" selection-end-line="161" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
               </folding>
@@ -228,9 +228,11 @@
       <file leaf-file-name="one-page-wonder.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7274775">
-              <caret line="248" column="18" selection-start-line="248" selection-start-column="18" selection-end-line="248" selection-end-column="18" />
-              <folding />
+            <state vertical-scroll-proportion="0.9617117">
+              <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+              <folding>
+                <element signature="e#3970#4213#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1131,8 +1133,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/blog.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.765306">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state vertical-scroll-proportion="-7.714286">
+          <caret line="161" column="10" selection-start-line="161" selection-start-column="10" selection-end-line="161" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
           </folding>
@@ -1141,9 +1143,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7274775">
-          <caret line="248" column="18" selection-start-line="248" selection-start-column="18" selection-end-line="248" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.9617117">
+          <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+          <folding>
+            <element signature="e#3970#4213#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
