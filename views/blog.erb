@@ -12,66 +12,66 @@
 
 <div class="center">
 
-<%if session[:visited]%>
-        <a id="newblogpost" href="/blog/new">New Post <i class="fa fa-plus"></i></a>
-          <hr>
-<% end %>
+  <%if session[:visited]%>
+      <a id="newblogpost" href="/blog/new">New Post <i class="fa fa-plus"></i></a>
+      <hr>
+  <% end %>
 </div>
 
 
 
 <div class="col-md-3"></div>
 <div class="col-md-6">
-<div class="center">
-<% @posts.reverse_order.each do |post| %>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title font subtitle"><%= post.title %>
-       <%if session[:visited]%>
-        <%if @user.perm >= 2 %>
-           <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
-                  <a class="edit" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
-        <%end%>
-       <%end%>
-        </h3>
-      </div>
-      <div class="panel-body">
-        <img class="postimage font" src="<%= post.url %>">
-        <hr>
-        <div class="caption font">
-        <%= post.content %>
-        </div>
-      </div>
-      <div class="panel-footer font"><%= post.date.strftime("Posted on %B %-d, %Y") %></div>
-
-    </div>
-
-
-      <div class="modal fade" id="postDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Are you sure you would like to delete the post "<%= post.title %>"?</h4>
+  <div class="center">
+    <% @posts.reverse_order.each do |post| %>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title font subtitle"><%= post.title %>
+              <%if session[:visited]%>
+                  <%if @user.perm >= 2 %>
+                      <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
+                      <a class="edit" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
+                  <%end%>
+              <%end%>
+            </h3>
+          </div>
+          <div class="panel-body">
+            <img class="postimage font" src="<%= post.url %>">
+            <hr>
+            <div class="caption font">
+              <%= post.content %>
             </div>
-            <form class="" method="post" action="/post/delete/<%= post.id %>">
-              <fieldset>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                  <button  type="submit" class="btn btn-danger">Delete Post</button>
-                </div>
-              </fieldset>
-            </form>
+          </div>
+          <div class="panel-footer font"><%= post.date.strftime("Posted on %B %-d, %Y") %></div>
+
+        </div>
+
+
+        <div class="modal fade" id="postDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Are you sure you would like to delete the post "<%= post.title %>"?</h4>
+              </div>
+              <form class="" method="post" action="/post/delete/<%= post.id %>">
+                <fieldset>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button  type="submit" class="btn btn-danger">Delete Post</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
 
 
 
-<%end%>
-</div>
+    <%end%>
   </div>
-  <div class="col-md-3"></div>
+</div>
+<div class="col-md-3"></div>
 
 
 
@@ -119,3 +119,18 @@
   </div>
 </div>
 <%end%>-->
+<div class="col-sm-8 blog-main">
+  <% @posts.reverse_order.each do |post| %>
+      <div class="blog-post">
+        <h2 class="blog-post-title"><%= post.title %><%if @user.perm >= 2 %>
+              <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
+              <a class="edit" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
+          <%end%></h2>
+        <p class="blog-post-meta"><%= post.date.strftime("Posted on %B %-d, %Y") %> by <a href="#">Mark</a></p>
+        <div class="caption font">
+          <%= post.content %>
+        </div>
+      </div><!-- /.blog-post -->
+  <% end %>
+
+</div>
