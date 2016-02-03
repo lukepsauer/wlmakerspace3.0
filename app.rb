@@ -34,7 +34,7 @@ class WLMS < Sinatra::Base
   end
   get '/blog' do
     @posts = Post.where(:type => "blog")
-    @authors = User.all
+    @authors = User
     if session[:visited]
       @posts.where(:draft => 0)
       @user = User.first(:id => session[:id])
