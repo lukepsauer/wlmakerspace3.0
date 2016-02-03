@@ -159,7 +159,7 @@ class WLMS < Sinatra::Base
   end
   post '/blog/new' do
     blog = Post.new
-    blog.title = params[:title]
+    # blog.title = params[:title]
     blog.content = params[:content]
     blog.date =params[:date]
     blog.draft   = (params.has_key? 'draft')? 1:0
@@ -177,8 +177,11 @@ class WLMS < Sinatra::Base
   end
   post '/blog/edit/:id' do
     blog = Post.first(:id => params[:id])
+=begin
     blog.title = params[:title]
+=end
     blog.content = params[:content]
+
     blog.date =params[:date]
     blog.draft   = (params.has_key? 'draft')? 1:0
     blog.type = "blog"
