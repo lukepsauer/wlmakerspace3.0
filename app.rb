@@ -36,8 +36,9 @@ class WLMS < Sinatra::Base
     @posts = Post.where(:type => "blog")
     @authors = User
     if session[:visited]
-      @posts.where(:draft => 0)
       @user = User.first(:id => session[:id])
+    else
+      @posts.where(:draft => 1)
     end
     @posts = @posts.reverse_order
     erb :blog

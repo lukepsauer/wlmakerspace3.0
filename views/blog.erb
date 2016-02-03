@@ -134,6 +134,7 @@
 <%end%>-->
 <div class="container">
   <% @posts.reverse_order.each do |post| %>
+      <% if post.draft != 1 || session[:id] != nil %>
 <article class="row">
   <div class="col-lg-2 col-md-3 col-sm-3">
     <p class="clearfix">
@@ -154,8 +155,8 @@
       <% end %>
       <%if session[:visited]%>
           <%if @user.perm >= 2 || (@user.id == post.author && post.draft==1) %>
-              <a  class="edit"><i class="fa fa-times fa-lg"></i></a>
-              <a class="edit" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
+              <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
+              <a class="delete" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
           <%end%>
       <%end%>
     </h3>
@@ -172,4 +173,6 @@
 
 </article>
 <%end%>
+  <% end %>
+
 </div>
