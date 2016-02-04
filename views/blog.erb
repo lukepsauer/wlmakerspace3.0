@@ -156,7 +156,9 @@
       <% end %>
       <%if session[:visited]%>
           <%if @user.perm >= 2 || (@user.id == post.author && post.draft==1) %>
-              <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
+              <form type="post" method="/blog/del/<%= post.id %> ">
+              <button type="submit" class="delete"><i class="fa fa-times fa-lg"></i></button>
+              </form>
               <a class="delete" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
           <%end%>
       <%end%>
