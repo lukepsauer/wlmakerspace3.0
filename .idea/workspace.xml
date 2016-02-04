@@ -161,8 +161,8 @@
       <file leaf-file-name="layouts.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layouts.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85540706">
-              <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.6148238">
+              <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -669,7 +669,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454550972561</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Removing the classic theme for datepicker to see if it makes it more mobile friendly">
+      <created>1454551172158</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1454551172158</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -715,7 +721,8 @@
     <MESSAGE value="Trying some google calendar stuff" />
     <MESSAGE value="Removed .reverse_order from the blog page to see if it was actually doing anything" />
     <MESSAGE value="Redoing somthing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redoing somthing" />
+    <MESSAGE value="Removing the classic theme for datepicker to see if it makes it more mobile friendly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing the classic theme for datepicker to see if it makes it more mobile friendly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1085,8 +1092,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layouts.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85540706">
-          <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.6148238">
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
           <folding />
         </state>
       </provider>
