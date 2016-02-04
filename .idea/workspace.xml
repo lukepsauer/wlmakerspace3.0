@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="Removed .reverse_order from the blog page to see if it was actually doing anything">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blogMake.erb" afterPath="$PROJECT_DIR$/views/blogMake.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dash.erb" afterPath="$PROJECT_DIR$/views/dash.erb" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
@@ -183,8 +181,8 @@
       <file leaf-file-name="dash.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/dash.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75941676">
-              <caret line="157" column="28" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.8128797">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -659,7 +657,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454550136809</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Removed .reverse_order from the blog page to see if it was actually doing anything">
+      <created>1454550872386</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1454550872386</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1074,8 +1078,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dash.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75941676">
-          <caret line="157" column="28" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.8128797">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
