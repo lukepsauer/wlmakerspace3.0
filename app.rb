@@ -224,7 +224,8 @@ class WLMS < Sinatra::Base
   post '/blog/del/:id' do
     p = Post.first(:id => params[:id])
     p.destroy
-    redirect request.env["HTTP_REFERER"]  end
+    redirect request.env["HTTP_REFERER"]
+  end
   post '/post/delete/:id' do
     p = Post.first(:id => params[:id])
     p.destroy

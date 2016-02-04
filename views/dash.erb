@@ -32,13 +32,13 @@
 
     <div class="center">
 
-      <% @posts.each do |post| %>
+     <!-- <% @posts.each do |post| %>
 
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title font subtitle"><%= post.title %>
-                <!--<form method="post"  action="/post/delete/<%= post.id %>">
-                    </form>-->
+                <form method="post"  action="/post/delete/<%= post.id %>">
+                    </form>
                 <%if session[:visited]%>
                     <%if @user.perm >= 2 %>
                         <a  class="delete"><i class="fa fa-times"></i></a>
@@ -89,7 +89,51 @@
 
 
 
-      <%end%>
+      <%end%>-->
+
+      <div class="container">
+        <!--I removed .reverse_order, to see if that was doing anything-->
+        <% @posts.each do |post| %>
+            <% if post.draft != 1 || session[:id] != nil %>
+                <article class="row">
+                  <div class="col-lg-2 col-md-3 col-sm-3">
+                    <p class="clearfix">
+                      <span class="day"><%= post.date.strftime("%d") %></span><span class="month-year"><b><%= post.date.strftime("%^b") %></b><br><%= post.date.strftime("%Y") %></span>
+                    </p>
+                    <ul class="list-unstyled">
+
+
+                      <li><span class="blog-readable"><i class="fa fa-user"></i> By <%=@authors.first(:id => post.author).firstname %></span></li>
+
+                    </ul>
+                  </div>
+
+                  <div class="col-lg-10 col-md-9 col-sm-9">
+                    <h3><a href="/blog/v/<%= post.id%>"><%= post.title%></a>
+                      <% if post.draft == 1 %>
+                          <small>(Draft)</small>
+                      <% end %>
+                      <%if session[:visited]%>
+                          <%if @user.perm >= 2 || (@user.id == post.author && post.draft==1) %>
+                              <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
+                              <a class="delete" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
+                          <%end%>
+                      <%end%>
+                    </h3>
+                    <hr>
+                    <div class="post-entry">
+                      <%= post.content%>
+                      <p><a href="/blog/v/<%= post.id%>" class="ttp" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="" data-original-title="Read More"><span class="label label-default"><i class="fa fa-ellipsis-h fa-lg"></i></span></a>
+                        <script>
+                          $(".ttp").tooltip()
+                        </script>
+
+                      </p></div>
+                  </div>
+
+                </article>
+            <%end%>
+        <% end %>
     </div>
   </div>
 
@@ -101,6 +145,7 @@
     <a class="btn btn-info" id="openSuggest"><i class="fa fa-comment-o fa-lg"></i> Make a suggestion about the website</a>
   </div>
   </div>
+</div>
 </div>
 </div>
 <div class="row">
