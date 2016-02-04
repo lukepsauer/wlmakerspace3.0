@@ -40,7 +40,9 @@ class WLMS < Sinatra::Base
     else
       @posts.where(:draft => 1)
     end
-    @posts = @posts.reverse_order
+
+    #Again, Removed the .reverse_order from the posts, so the next line makes no sense. Pay No attention
+    @posts = @posts
     erb :blog
   end
   get '/blog/new' do

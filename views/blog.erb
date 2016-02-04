@@ -134,7 +134,7 @@
 <%end%>-->
 <div class="container">
   <!--I removed .reverse_order, to see if that was doing anything-->
-  <% @posts.each do |post| %>
+  <% @posts.reverse_order.each do |post| %>
       <% if post.draft != 1 || session[:id] != nil %>
 <article class="row">
   <div class="col-lg-2 col-md-3 col-sm-3">
