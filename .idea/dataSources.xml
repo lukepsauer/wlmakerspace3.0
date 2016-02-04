@@ -24,7 +24,6 @@
         <property name="ssl" value="true" />
         <property name="sslfactory" value="org.postgresql.ssl.NonValidatingFactory" />
       </driver-properties>
-      <libraries />
     </data-source>
   </component>
 </project>
