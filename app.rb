@@ -42,7 +42,7 @@ class WLMS < Sinatra::Base
     end
 
     #Again, Removed the .reverse_order from the posts, so the next line makes no sense. Pay No attention
-    @posts = @posts
+    @posts = @posts.reverse_order(:id)
     erb :blog
   end
   get '/blog/new' do
