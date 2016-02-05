@@ -161,8 +161,8 @@
       <file leaf-file-name="layouts.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layouts.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8417266">
-              <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="120" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.60431653">
+              <caret line="113" column="47" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -774,7 +774,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454710987327</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Changed a few style for the login dropdown">
+      <created>1454711159328</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1454711159328</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -827,7 +833,8 @@
     <MESSAGE value="I am going to fix this, just copied code" />
     <MESSAGE value="Added form" />
     <MESSAGE value="Removed Modal parts from the dropdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Modal parts from the dropdown" />
+    <MESSAGE value="Changed a few style for the login dropdown" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed a few style for the login dropdown" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1199,8 +1206,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layouts.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8417266">
-          <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="120" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.60431653">
+          <caret line="113" column="47" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#div#0;n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
