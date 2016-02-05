@@ -162,7 +162,7 @@
         <entry file="file://$PROJECT_DIR$/views/layouts.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.68345326">
-              <caret line="103" column="33" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
+              <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -750,7 +750,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454710441340</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Trying out a dropdown login">
+      <created>1454710618394</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1454710618394</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1173,7 +1179,7 @@
     <entry file="file://$PROJECT_DIR$/views/layouts.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68345326">
-          <caret line="103" column="33" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
+          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#div#0;n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
