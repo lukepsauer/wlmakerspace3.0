@@ -26,20 +26,20 @@
   <% @posts.each do |post| %>
       <% if post.draft != 1 || session[:id] != nil %>
 <article class="row">
-  <div class="col-lg-2 col-md-3 col-sm-3">
+  <div class="col-lg-2 col-md-3 col-sm-3" style="padding-bottom: 5%">
     <p class="clearfix">
-      <span class="day"><%= post.date.strftime("%d") %></span><span class="month-year"><b><%= post.date.strftime("%^b") %></b><br><%= post.date.strftime("%Y") %></span>
+      <span class="day" style="color: #8e2522"><%= post.date.strftime("%d") %></span><span class="month-year"><b><%= post.date.strftime("%^b") %></b><br><%= post.date.strftime("%Y") %></span>
     </p>
     <ul class="list-unstyled">
 
 
-      <li><span class="blog-readable"><i class="fa fa-user"></i> By <%=@authors.first(:id => post.author).firstname %></span></li>
+      <li><span class="blog-readable"><i class="fa fa-user" style="color: #8e2522"></i> By <%=@authors.first(:id => post.author).firstname %></span></li>
 
     </ul>
   </div>
 
   <div class="col-lg-10 col-md-9 col-sm-9">
-    <h3><a href="/blog/v/<%= post.id%>"><%= post.title%></a>
+    <h3><a href="/blog/v/<%= post.id%>" style="color: #8e2522"><%= post.title%></a>
       <% if post.draft == 1 %>
           <small>(Draft)</small>
       <% end %>
