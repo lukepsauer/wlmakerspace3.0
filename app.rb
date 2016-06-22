@@ -75,7 +75,7 @@ class WLMS < Sinatra::Base
     @u=User.first(:id => session[:id])
     erb :notfound
   end
-  get 'login' do
+  get '/login' do
     erb :login
   end
 
