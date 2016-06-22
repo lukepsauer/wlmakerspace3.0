@@ -35,7 +35,7 @@
       <button class="ql-italic">Italic</button>
     </div>
     <div class="controls">
-      <textarea rows="10" class="form-control" id="content" name="content"><%= @isEdit ? @blog.content : '' %></textarea>
+      <div rows="10" class="form-control" id="content" name="content"><%= @isEdit ? @blog.content : '' %></div>
     </div>
   </div>
   <br/>
@@ -79,7 +79,15 @@
     </form>
 <% end %>
   <script>
-    var quill = new Quill('#content');
-    quill.addModule('toolbar', { container: '#toolbar' });
+    var fullEditor = new Quill('#content', {
+      modules: {
+        'authorship': { authorId: 'galadriel', enabled: true },
+        'multi-cursor': true,
+        'toolbar': { container: '#full-toolbar' },
+        'link-tooltip': true
+      },
+      theme: 'snow'
+    });
+
   </script>
 </div>
