@@ -171,7 +171,7 @@ class WLMS < Sinatra::Base
     blog.save
     if blog.save
       if ENV['SLACK_URL']
-        payload = %({"channel": "#blogstuffs", "text": "Looks like *#{current_user.realName}* just *#{blog.draft == 1 ? 'drafted' : 'published'}* a *new* blog entry: _'#{blog.title}'_."})
+        payload = %({"channel": "#blogstuffs", "text": "Looks like *#{@u.firstname}* just *#{blog.draft == 1 ? 'drafted' : 'published'}* a *new* blog entry: _'#{blog.title}'_."})
         Net::HTTP.post_form URI(ENV['SLACK_URL']), {'payload' => payload}
       end
     else
@@ -189,7 +189,7 @@ class WLMS < Sinatra::Base
     blog.save
     if blog.save
       if ENV['SLACK_URL']
-        payload = %({"channel": "#blogstuffs", "text": "Looks like *#{current_user.realName}* just edited a *#{blog.draft == 1 ? 'draft' : 'post'}*: _'#{blog.title}'_."})
+        payload = %({"channel": "#blogstuffs", "text": "Looks like *#{@u.firstname}* just edited a *#{blog.draft == 1 ? 'draft' : 'post'}*: _'#{blog.title}'_."})
         Net::HTTP.post_form URI(ENV['SLACK_URL']), {'payload' => payload}
       end
     else

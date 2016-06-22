@@ -20,118 +20,7 @@
 
 
 
-<!--
-<div class="col-md-2"></div>
--->
-<!--<div class="col-md-8">
-  <div class="center">
-    <% @posts.reverse_order.each do |post| %>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 style="text-align: left" class="panel-title font subtitle"><%= post.title %>
-              <div class="col-lg-2 col-md-3 col-sm-3">
-                <p class="clearfix">
-                  <span class="day">09</span><span class="month-year"><b>JAN</b><br>2016</span>
-                </p>
-                <ul class="list-unstyled">
 
-
-                  <li><span class="blog-readable"><i class="fa fa-user"></i> By Julia</span></li>
-
-                </ul>
-              </div>
-              <%if session[:visited]%>
-                  <%if @user.perm >= 2 %>
-                      <a  class="delete"><i class="fa fa-times fa-lg"></i></a>
-                      <a class="edit" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
-                  <%end%>
-              <%end%>
-            </h3>
-          </div>
-          <div class="panel-body">
-            <img class="postimage font" src="<%= post.url %>">
-            <hr>
-            <div class="caption font">
-              <%= post.content %>
-            </div>
-          </div>
-          <div class="panel-footer font"><%= post.date.strftime("Posted on %B %-d, %Y") %></div>
-
-        </div>
-
-
-        <div class="modal fade" id="postDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Are you sure you would like to delete the post "<%= post.title %>"?</h4>
-              </div>
-              <form class="" method="post" action="/post/delete/<%= post.id %>">
-                <fieldset>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button  type="submit" class="btn btn-danger">Delete Post</button>
-                  </div>
-                </fieldset>
-              </form>
-            </div>
-          </div>
-        </div>
-
-
-
-    <%end%>
-  </div>
-</div>
-<div class="col-md-3"></div>-->
-
-
-
-
-<!--
-
-<%if session[:visited] && @user.perm>2%>
-<div class="modal fade" id="postCreate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel"></h4>
-      </div>
-      <form class="" method="post" action="/post/create">
-        <div class="modal-body">
-          <fieldset>
-            <div class="form-group">
-              <label class="font">Post Title</label>
-              <input minlength="2" required class="form-control" type="text" name="title">
-            </div>
-            <div class="form-group">
-              <label class="font">Temp</label>
-              <input minlength="2" required class="form-control" name="url">
-            </div>
-            <div class="form-group">
-              <label class="font">Content</label><br>
-              <textarea class="form-control postContent" name="content"></textarea>
-            </div>
-            <div class="form-group">
-              <label class="font">CURRENTLY NOT WORKING!</label>
-              <input class="font" type="file" name="myfile">
-            </div>
-            <div class="alert alert-info email" role="alert">
-              <strong>Important!</strong> If you plan on adding boldface, italics or line breaks use the HTML, until I can get it working. To bold, use &lt;b&gt;BOLD FACE TEXT&lt;/b&gt;, &lt;i&gt;italic text&lt;/i&gt;,<br> one line&lt;br&gt; new line
-            </div>
-          </fieldset>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default font" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary font">Post</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-<%end%>-->
 <div class="container">
   <!--I removed .reverse_order, to see if that was doing anything-->
   <% @posts.each do |post| %>
@@ -165,12 +54,7 @@
     <hr>
     <div class="post-entry">
       <%= post.content%>
-      <p><a href="/blog/v/<%= post.id%>" class="ttp" data-toggle="tooltip" data-trigger="hover" data-placement="right" title="" data-original-title="Read More"><span class="label label-default"><i class="fa fa-ellipsis-h fa-lg"></i></span></a>
-        <script>
-          $(".ttp").tooltip()
-        </script>
-
-      </p></div>
+     </div>
   </div>
 
 </article>
