@@ -30,7 +30,10 @@
   </div>
   <div class="control-group">
     <label class="control-label" for="content">Message</label>
-
+    <div id="toolbar">
+      <button class="ql-bold">Bold</button>
+      <button class="ql-italic">Italic</button>
+    </div>
     <div class="controls">
       <textarea rows="10" class="form-control" id="content" name="content"><%= @isEdit ? @blog.content : '' %></textarea>
     </div>
@@ -75,10 +78,8 @@
 <% if @isEdit %>
     </form>
 <% end %>
-<!--
-<script>
-    $(function () {
-        $("#collapseOne").collapse('hide');
-    });
-</script>-->
+  <script>
+    var quill = new Quill('#content');
+    quill.addModule('toolbar', { container: '#toolbar' });
+  </script>
 </div>
