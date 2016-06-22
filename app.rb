@@ -75,9 +75,10 @@ class WLMS < Sinatra::Base
     @u=User.first(:id => session[:id])
     erb :notfound
   end
-  get '/oculus' do
-    erb :oculus
+  get 'login' do
+    erb :login
   end
+
 #-------------POST ROUTES---------------------
   post '/user/auth' do
 
