@@ -23,7 +23,7 @@
   <div class="col-md-6">
     <div class="subtitle">Makerspace Updates</div>
     <%if session[:visited]%>
-        <%if @user.perm > 2  %>
+        <%if @u.perm > 2  %>
             <a id="newblogpost">New update <i class="fa fa-plus fa-lg"></i></a>
 
         <% end %>
@@ -40,7 +40,7 @@
                 <!--<form method="post"  action="/post/delete/<%= post.id %>">
                     </form>-->
                 <%if session[:visited]%>
-                    <%if @user.perm >= 2 %>
+                    <%if @u.perm >= 2 %>
                         <a  class="delete"><i class="fa fa-times"></i></a>
                     <%end%>
                 <%end%>
@@ -141,7 +141,7 @@
 
 
 
-<%if session[:visited] && @user.perm>2%>
+<%if session[:visited] && @u.perm>2%>
     <div class="modal fade" id="postCreate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
