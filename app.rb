@@ -3,7 +3,7 @@
 
 class WLMS < Sinatra::Base
   include BCrypt
-
+#Random Comment
 #DB = Sequel.connect(ENV['DATABASE_URL'] || 'sqlite://db/main.db')
 #require './models.rb'
   configure do
