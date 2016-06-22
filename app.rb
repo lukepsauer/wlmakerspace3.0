@@ -16,7 +16,7 @@ class WLMS < Sinatra::Base
 #---------GET ROUTES---------------
   get '/' do
     @signup = ENV["Signup"]
-    @user = User.first(:id => session[:id])
+    @u = User.first(:id => session[:id])
     erb :landing
   end
   get '/dashboard' do
@@ -26,7 +26,7 @@ class WLMS < Sinatra::Base
       @posts = Post.where(:type => "update")
       @posts=@posts.reverse_order(:id)
       puts @posts.inspect
-      @user = User.first(:id => session[:id])
+      @u = User.first(:id => session[:id])
       erb :dash
     else
       redirect not_found
@@ -36,7 +36,7 @@ class WLMS < Sinatra::Base
     @posts = Post.where(:type => "blog")
     @authors = User
     if session[:visited]
-      @user = User.first(:id => session[:id])
+      @u = User.first(:id => session[:id])
     else
       @posts.where(:draft => 1)
     end
@@ -46,22 +46,22 @@ class WLMS < Sinatra::Base
     erb :blog
   end
   get '/blog/new' do
-    @user = User.first(:id => session[:id])
-    @user.perm == 3 ? @publishC = true :  @publishC = false
+    @u = User.first(:id => session[:id])
+    @u.perm == 3 ? @publishC = true :  @publishC = false
     @isEdit = false # I use the same view for both creating and editing the blog, but there need to be slightly different controls
     erb :blogMake
   end
   get '/blog/edit/:id' do
     @blog = Post.first(:id => params[:id])
-    @user = User.first(:id => session[:id])
-    @user.perm == 3 ? @publishC = true :  @publishC = false
+    @u = User.first(:id => session[:id])
+    @u.perm == 3 ? @publishC = true :  @publishC = false
     @isEdit = true # I use the same view for both creating and editing the blog, but there need to be slightly different controls
     erb :blogMake
   end
   get '/settings' do
     if session[:visited]
       puts @test
-      @user = User.first(:id => session[:id])
+      @u = User.first(:id => session[:id])
       erb :settings
     else
       redirect not_found
@@ -171,7 +171,7 @@ class WLMS < Sinatra::Base
     blog.save
     if blog.save
       if ENV['SLACK_URL']
-        payload = %({"channel": "#blogstuffs", "text": "Looks like *#{@u.firstname}* just *#{blog.draft == 1 ? 'drafted' : 'published'}* a *new* blog entry: _'#{blog.title}'_."})
+        payload = %({"channel": "#blogstuffs", "text": "Looks like *#{User.first(:id => session[:id]).firstname}* just *#{blog.draft == 1 ? 'drafted' : 'published'}* a *new* blog entry: _'#{blog.title}'_."})
         Net::HTTP.post_form URI(ENV['SLACK_URL']), {'payload' => payload}
       end
     else
@@ -189,7 +189,7 @@ class WLMS < Sinatra::Base
     blog.save
     if blog.save
       if ENV['SLACK_URL']
-        payload = %({"channel": "#blogstuffs", "text": "Looks like *#{@u.firstname}* just edited a *#{blog.draft == 1 ? 'draft' : 'post'}*: _'#{blog.title}'_."})
+        payload = %({"channel": "#blogstuffs", "text": "Looks like *#{User.first(:id => session[:id]).firstname}* just edited a *#{blog.draft == 1 ? 'draft' : 'post'}*: _'#{blog.title}'_."})
         Net::HTTP.post_form URI(ENV['SLACK_URL']), {'payload' => payload}
       end
     else
