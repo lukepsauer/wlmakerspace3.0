@@ -4,7 +4,6 @@
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blogMake.erb" afterPath="$PROJECT_DIR$/views/blogMake.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts.erb" afterPath="$PROJECT_DIR$/views/layouts.erb" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -187,8 +186,8 @@
       <file leaf-file-name="blogMake.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.268546">
-              <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.34421366">
+              <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#select#0;n#span#0;n#div#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#select#1;n#span#0;n#div#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="true" />
@@ -920,7 +919,13 @@
       <option name="project" value="LOCAL" />
       <updated>1466615910712</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Quill integration">
+      <created>1466616128461</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1466616128461</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1368,8 +1373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.268546">
-          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.34421366">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#select#0;n#span#0;n#div#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#1;n#span#0;n#div#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="true" />
