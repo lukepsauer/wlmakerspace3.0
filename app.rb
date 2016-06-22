@@ -72,7 +72,7 @@ class WLMS < Sinatra::Base
     redirect '/'
   end
   not_found do
-    @user=User.first(:id => session[:id])
+    @u=User.first(:id => session[:id])
     erb :notfound
   end
   get '/oculus' do
