@@ -1,0 +1,33 @@
+<h1>Request Training</h1>
+<p class="lead font">
+<form id="trainingrequest">
+  <fieldset>
+    <div class="form-group">
+      <label class="font">First Name: </label>
+      <input class="form-control smallform" minlength="2" required placeholder="First Name" type="text" name="firstname">
+    </div>
+    <div class="form-group">
+      <label class="font">Last Name: </label>
+      <input class="form-control smallform font" placeholder="Last name" required minlength="2" type="text" name="lastname">
+    </div>
+    <div class="form-group">
+      <label class="font">Date: </label>
+      <input class="form-control smallform  datepicker font" required placeholder="Click me for date" type="text" name="date">
+    </div>
+    <div class="form-group">
+      <label class="font"> Time:  </label>
+      <input class="form-control smallform timepicker font" required placeholder="Click me for time" type="text" name="time">
+    </div>
+    <div class="form-group">
+      <label class="font">Email: </label>
+      <input class="form-control smallform font" required placeholder="Email" type="email" name="email">
+    </div>
+    <div class="alert alert-info email" role="alert">
+      <strong>Remember!</strong> This will notify us that you would like to get trained. We will email you, and we can talk about availability!
+    </div>
+    <hr>
+    <button type="submit" id="sentemail" class="btn btn-success font">Submit</button>
+  </fieldset>
+</form>
+
+</p>
