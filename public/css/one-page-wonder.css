@@ -314,3 +314,10 @@ footer {
     text-align: center;
     border-radius:0px;
 }
+.profile-picture{
+    display: block;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 20px;
+}
