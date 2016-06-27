@@ -305,3 +305,8 @@ footer {
 #openSuggest{
     margin: 15px;
 }
+.header-title{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 72px;
+}
