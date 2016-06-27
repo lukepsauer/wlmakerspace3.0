@@ -310,3 +310,7 @@ footer {
     font-family: 'Titillium Web', sans-serif;
     font-size: 72px;
 }
+.btn-login{
+    text-align: center;
+    border-radius:0px;
+}
