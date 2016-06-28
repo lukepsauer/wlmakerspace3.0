@@ -340,7 +340,8 @@ footer {
     padding: 5px 5px;
     font-size: 20px;
     font-family: Helvetica;
-
+    width: auto;
+    height: auto;
     color: #FFF;
 }
 .background-Img {
