@@ -330,7 +330,7 @@ footer {
 .inner-container {
     border: 1px solid black;
     display: inline-block;
-    position: relative;
+
 }
 .video-overlay {
     position: absolute;
