@@ -340,6 +340,9 @@ footer {
     padding: 5px 5px;
     font-size: 20px;
     font-family: Helvetica;
+    background-color: rgba(0,0,0,.5);
+    height: auto;
+    width: auto;
     color: #FFF;
 }
 .background-Img {
@@ -347,7 +350,6 @@ footer {
     height: auto;
 }
 .img-overlay{
-    background-color: rgba(0,0,0,.5);
-    height: auto;
-    width: 100%;
+
+
 }
