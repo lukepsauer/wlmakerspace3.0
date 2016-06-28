@@ -327,6 +327,11 @@ footer {
     height: 100%;
     text-align: center;
 }
+.inner-container {
+    border: 1px solid black;
+    display: inline-block;
+
+}
 .video-overlay {
     position: absolute;
     left: -50px;
