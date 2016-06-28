@@ -242,6 +242,7 @@ footer {
     margin:10px;
 }
 .logo{
+    display:block;
     width:95%;
     height:50%
 }
@@ -343,6 +344,9 @@ footer {
     width: auto;
     height: auto;
     color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .background-Img {
     width: 100%;
