@@ -342,7 +342,10 @@ footer {
     font-family: Helvetica;
     color: #FFF;
 }
-video {
+.background-Img {
     width: 100%;
     height: auto;
+}
+.img-overlay{
+    background-color: rgba(0,0,0,.5);
 }
