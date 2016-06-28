@@ -329,7 +329,7 @@ footer {
 }
 .inner-container {
     border: 1px solid black;
-    display: inline-block;
+    display: block;
 
 }
 .video-overlay {
