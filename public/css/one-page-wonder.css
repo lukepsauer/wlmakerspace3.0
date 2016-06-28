@@ -330,7 +330,7 @@ footer {
 .inner-container {
     border: 1px solid black;
     display: block;
-    background-color: rgba(255,255,255,.5);
+
 }
 .video-overlay {
     position: absolute;
@@ -347,6 +347,7 @@ footer {
 .background-Img {
     width: 100%;
     height: auto;
+    background-color: rgba(255,255,255,.5);
 }
 .img-overlay{
 
