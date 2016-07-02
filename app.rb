@@ -78,6 +78,9 @@ class WLMS < Sinatra::Base
   get '/login' do
     erb :login
   end
+  get '/request' do
+    erb :request
+  end
 
 #-------------POST ROUTES---------------------
   post '/user/auth' do
