@@ -81,7 +81,7 @@ $('#openSuggest').click(function(){
 })
 
 
-$('#testmail').click(function(){
+$('#sentemail').click(function(){
     console.log("Be this work wat?")
     $.post( "/test/email", $( "#trainingrequest" ).serialize() );
 })
