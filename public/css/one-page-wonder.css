@@ -245,6 +245,7 @@ footer {
     display:block;
     width:85%;
     height:45%;
+    margin: 0 auto;
 }
 .btn.btn-success.new.under-title {
 
