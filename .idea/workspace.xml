@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blog.erb" afterPath="$PROJECT_DIR$/views/blog.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blogMake.erb" afterPath="$PROJECT_DIR$/views/blogMake.erb" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
@@ -187,8 +186,8 @@
       <file leaf-file-name="blogMake.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+            <state relative-caret-position="344">
+              <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -632,14 +631,7 @@
       <option name="presentableId" value="Default" />
       <updated>1452084214905</updated>
       <workItem from="1467434487618" duration="1377000" />
-      <workItem from="1468465789346" duration="3057000" />
-    </task>
-    <task id="LOCAL-00011" summary="Removed .reverse_order from the blog page to see if it was actually doing anything">
-      <created>1454549743084</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1454549743084</updated>
+      <workItem from="1468465789346" duration="3213000" />
     </task>
     <task id="LOCAL-00012" summary="Removed .reverse_order from the blog page to see if it was actually doing anything">
       <created>1454549995829</created>
@@ -977,11 +969,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468467971634</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Testing some blog stuff&#10;">
+      <created>1468533471267</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1468533471267</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4434000" />
+    <option name="totallyTimeSpent" value="4590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -1040,7 +1039,8 @@
     <MESSAGE value="Getting rid of background image" />
     <MESSAGE value="Adding new background image&#10;" />
     <MESSAGE value="Added formatting for the request page&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added formatting for the request page&#10;" />
+    <MESSAGE value="Testing some blog stuff&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing some blog stuff&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1404,8 +1404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+        <state relative-caret-position="344">
+          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
           <folding />
         </state>
       </provider>
