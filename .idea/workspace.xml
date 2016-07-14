@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/landing.erb" afterPath="$PROJECT_DIR$/views/landing.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/one-page-wonder.css" afterPath="$PROJECT_DIR$/public/css/one-page-wonder.css" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -173,11 +173,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="one-page-wonder.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="one-page-wonder.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="362" column="45" selection-start-line="362" selection-start-column="45" selection-end-line="362" selection-end-column="45" />
+            <state relative-caret-position="504">
+              <caret line="359" column="1" selection-start-line="359" selection-start-column="1" selection-end-line="359" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -210,10 +210,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landing.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="landing.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/landing.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
+            <state relative-caret-position="1428">
               <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
               <folding />
             </state>
@@ -277,8 +277,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/views/request.erb" />
         <option value="$PROJECT_DIR$/views/layouts.erb" />
-        <option value="$PROJECT_DIR$/public/css/one-page-wonder.css" />
         <option value="$PROJECT_DIR$/views/landing.erb" />
+        <option value="$PROJECT_DIR$/public/css/one-page-wonder.css" />
       </list>
     </option>
   </component>
@@ -629,21 +629,7 @@
       <option name="presentableId" value="Default" />
       <updated>1452084214905</updated>
       <workItem from="1467434487618" duration="1377000" />
-      <workItem from="1468465789346" duration="1658000" />
-    </task>
-    <task id="LOCAL-00008" summary="Trying some google calendar stuff">
-      <created>1453778500713</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1453778500713</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Trying some google calendar stuff">
-      <created>1453778606561</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1453778606561</updated>
+      <workItem from="1468465789346" duration="2177000" />
     </task>
     <task id="LOCAL-00010" summary="Trying some google calendar stuff">
       <created>1453778749229</created>
@@ -974,11 +960,25 @@
       <option name="project" value="LOCAL" />
       <updated>1468467325372</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Added formatting for the request page&#10;">
+      <created>1468467452164</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1468467452164</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Added formatting for the request page&#10;">
+      <created>1468467613666</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1468467613666</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3035000" />
+    <option name="totallyTimeSpent" value="3554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1388,18 +1388,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
+    <entry file="file://$PROJECT_DIR$/views/landing.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="362" column="45" selection-start-line="362" selection-start-column="45" selection-end-line="362" selection-end-column="45" />
+        <state relative-caret-position="1428">
+          <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/landing.erb">
+    <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+        <state relative-caret-position="504">
+          <caret line="359" column="1" selection-start-line="359" selection-start-column="1" selection-end-line="359" selection-end-column="1" />
           <folding />
         </state>
       </provider>
