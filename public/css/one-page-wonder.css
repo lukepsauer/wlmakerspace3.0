@@ -362,3 +362,7 @@ footer {
     font-size: 20px;
     font-family: 'Titillium Web', sans-serif;
 }
+.featurette-image{
+    border-radius: 10px;
+
+}
