@@ -366,3 +366,7 @@ footer {
     border-radius: 50px;
 
 }
+#editor{
+    border: 1px solid black;
+    border-radius: 3px;
+}
