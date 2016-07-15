@@ -169,7 +169,7 @@ class WLMS < Sinatra::Base
     blog.title = params[:title]
     blog.content = params[:content]
     blog.date =params[:date]
-    blog.url = name['url']
+    #blog.url = name['url']
     blog.draft   = (params.has_key? 'draft')? 1:0
     blog.type = "blog"
     blog.author = session[:id]
