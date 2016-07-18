@@ -168,10 +168,12 @@ class WLMS < Sinatra::Base
     redirect '/#contact'
   end
   post '/blog/new' do
+    name=Cloudinary::Uploader.upload(params['myfile'][:tempfile],api_key: ENV["Cloudinary_api"], api_secret: ENV["Cloudinary_secret"], cloud_name: ENV["Cloudinary_name"])
     blog = Post.new
     blog.title = params[:title]
     blog.content = params[:content]
     blog.date =params[:date]
+    blog.url = name["url"]
     blog.draft   = (params.has_key? 'draft')? 1:0
     blog.type = "blog"
     blog.author = session[:id]
