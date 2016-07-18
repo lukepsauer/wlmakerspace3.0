@@ -1,35 +1,23 @@
 <!-- Navigation -->
 
-<div class="outer-container">
-  <div class="inner-container">
-    <div class="video-overlay"><img class="logo" src="/ms_logo1.png"></div>
-    <div class="img-overlay">
-     <img class="background-Img" src="/MakerSpace.jpg">
-    </div>
-  </div>
-</div>
-<!-- Full Width Image Header -->
-<!--<header class="header-image">
 
+<!-- Full Width Image Header -->
+<header class="header-image">
   <div class="headline">
     <div class="container">
-      &lt;!&ndash;<h1>Westport Library Makerspace</h1>
-      <h2>Come in, Go far</h2>&ndash;&gt;
-
-
+      <!--<h1>Westport Library Makerspace</h1>
+      <h2>Come in, Go far</h2>-->
+    <div class="center">
+      <img class="logo" src="/Makerspace-logo-FINAL.png">
+      <i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i>
+    </div>
+<hr>
 
     </div>
   </div>
-</header>-->
+</header>
 
 <!-- Page Content -->
-<%= puts @test %>
-<%if @test==1  %>
-<div id="training_sent_alert" class="alert alert-success alert-dismissible email" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Sent!</strong> You should expect an email back in the next few days!
-</div>
-<%end  %>
 <div class="container">
   <!-- First Featurette -->
   <div id="about"></div>
@@ -38,7 +26,7 @@
     <h2 class="featurette-heading font">Who
       <span class="text-muted font">are we?</span>
     </h2>
-    <p class="lead font">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <p class="lead font">We are a team of super powered heros. Just kidding! We are the makerspace in the Westport Library. We consist of a few staff and a whole lot of volenteers.</p>
   </div>
 
   <hr class="featurette-divider">
@@ -49,19 +37,31 @@
     <h2 class="featurette-heading font">What
       <span class="text-muted font">do we do?</span>
     </h2>
-    <p class="lead font">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <p class="lead font">We help people make! This means that if you have an idea, we can help you make with by training you with the tools and providing assistance to make your idea a real thing. </p>
   </div>
+
+  <hr class="featurette-divider">
+
+  <div class="featurette" id="services">
+    <img class="featurette-image img-rounded img-responsive pull-right" src="/robot-almost-done.JPG">
+    <h2 class="featurette-heading font">How
+      <span class="text-muted font">can I start?</span>
+    </h2>
+    <p class="lead font">We reccommend that you get trained on our most baasic 3D printer that we have here, just request a training and we will help you work it out.</p>
+  </div>
+
 
   <hr class="featurette-divider">
 
   <!-- Third Featurette -->
   <div class="featurette" id="contact">
-    <img class="featurette-image img-rounded img-responsive pull-right" src="robot-hand-up.JPG">
+    <img class="featurette-image img-rounded img-responsive pull-left" src="robot-hand-up.JPG">
     <h2 class="featurette-heading font">Want to get trained?
       <span class="text-muted font">Schedule today!</span>
     </h2>
     <div class="container">
       <div class="center">
+        <a class="btn btn-success btn-lg request-redir" href="/request">Let's Go!</a>
     </div>
     </div>
   </div>
@@ -72,14 +72,14 @@
   <footer>
     <div class="row">
       <div class="col-lg-12">
-        <!--<p>Copyright &copy; Your Website 2014</p>-->
+
       </div>
     </div>
   </footer>
 
 </div>
 
-<% if @signup%>
+<% if @Signup%>
     <form class="" method="post" action="/user/create">
       <fieldset>
         <div class="modal-body">

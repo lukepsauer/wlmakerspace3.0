@@ -6,9 +6,9 @@ body {
 .header-image {
     display: block;
     width: 100%;
-
+    height: 100%;
     text-align: center;
-    background: url('/makerspace-blur.jpe') no-repeat center center scroll;
+    background: url('/background.png') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -243,8 +243,9 @@ footer {
 }
 .logo{
     display:block;
-    width:95%;
-    height:50%
+    width:80%;
+    height:auto;
+    margin: 0 auto;
 }
 .btn.btn-success.new.under-title {
 
@@ -354,7 +355,18 @@ footer {
     height: auto;
 
 }
-.img-overlay{
+.request-redir{
 
+}
+.nav-style{
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.featurette-image{
+    border-radius: 50px;
 
+}
+#editor{
+    border: 1px solid black;
+    border-radius: 3px;
 }
