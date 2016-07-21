@@ -84,7 +84,9 @@ class WLMS < Sinatra::Base
   get '/calTest' do
     erb :calendarTesting
   end
-
+  get 'about' do
+    erb :about
+  end
 #-------------POST ROUTES---------------------
   post '/user/auth' do
 
