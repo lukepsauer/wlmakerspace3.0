@@ -84,9 +84,15 @@ $('#openSuggest').click(function(){
 $('#sentemail').click(function(){
     console.log("Be this work wat?")
     $.post( "/test/email", $( "#trainingrequest" ).serialize() );
-})
+});
 
+$(window).scroll(function() {
 
+    var styledDiv = $('nav'),
+        targetScroll = $('nav').position().top,
+        currentScroll = $('html').scrollTop() || $('body').scrollTop();
+        styledDiv.toggleClass('downNav', currentScroll <= targetScroll);
+});
 
 
 

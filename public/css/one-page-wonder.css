@@ -361,6 +361,8 @@ footer {
 .nav-style{
     font-size: 20px;
     font-family: 'Titillium Web', sans-serif;
+    color: black;
+    opacity: 0;
 }
 .featurette-image{
     border-radius: 50px;
@@ -369,4 +371,9 @@ footer {
 #editor{
     border: 1px solid black;
     border-radius: 3px;
+}
+.downNav{
+    bakground-color: black;
+    opacity: 100;
+
 }
