@@ -91,7 +91,7 @@ $(window).scroll(function() {
     var styledDiv = $('nav'),
         targetScroll = $('nav').position().top,
         currentScroll = $('html').scrollTop() || $('body').scrollTop();
-        styledDiv.toggleClass('downNav', currentScroll <= targetScroll);
+        styledDiv.toggleClass('downNav', currentScroll >= targetScroll);
 });
 
 
