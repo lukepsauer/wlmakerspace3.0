@@ -192,7 +192,7 @@ class WLMS < Sinatra::Base
   post '/blog/edit/:id' do
     blog = Post.first(:id => params[:id])
     blog.title = params[:title]
-    blog.content = params[:content]
+    blog.content = Kramdown::Document.new(content).to_html
 
     blog.date =params[:date]
     blog.draft   = (params.has_key? 'draft')? 1:0
