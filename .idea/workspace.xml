@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/one-page-wonder.css" afterPath="$PROJECT_DIR$/public/css/one-page-wonder.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blog.erb" afterPath="$PROJECT_DIR$/views/blog.erb" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
@@ -164,11 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/blog.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="567">
-              <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+              <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -214,11 +214,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="one-page-wonder.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="one-page-wonder.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="383" column="0" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
+            <state relative-caret-position="645">
+              <caret line="385" column="14" selection-start-line="385" selection-start-column="14" selection-end-line="385" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -277,11 +277,11 @@
         <option value="$PROJECT_DIR$/views/landing.erb" />
         <option value="$PROJECT_DIR$/public/js/js.js" />
         <option value="$PROJECT_DIR$/public/js/blogHide.js" />
-        <option value="$PROJECT_DIR$/public/css/one-page-wonder.css" />
         <option value="$PROJECT_DIR$/views/blogPage.erb" />
         <option value="$PROJECT_DIR$/views/blogMake.erb" />
         <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/views/blog.erb" />
+        <option value="$PROJECT_DIR$/public/css/one-page-wonder.css" />
       </list>
     </option>
   </component>
@@ -672,14 +672,7 @@
       <workItem from="1470092841599" duration="146000" />
       <workItem from="1470160763940" duration="9465000" />
       <workItem from="1470179451482" duration="6962000" />
-      <workItem from="1470261275431" duration="2909000" />
-    </task>
-    <task id="LOCAL-00049" summary="Adding the aabout the staff page">
-      <created>1469287454809</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1469287454809</updated>
+      <workItem from="1470261275431" duration="3029000" />
     </task>
     <task id="LOCAL-00050" summary="Adding the aabout the staff page">
       <created>1469287586456</created>
@@ -1017,11 +1010,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470263700775</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Testing markdown for blog">
+      <created>1470264191153</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1470264191153</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25560000" />
+    <option name="totallyTimeSpent" value="25680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1401,14 +1401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="383" column="0" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1436,7 +1428,15 @@
     <entry file="file://$PROJECT_DIR$/views/blog.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
-          <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="385" column="14" selection-start-line="385" selection-start-column="14" selection-end-line="385" selection-end-column="14" />
           <folding />
         </state>
       </provider>

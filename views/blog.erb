@@ -59,9 +59,9 @@
     <img src="<%= post.url %>">
     <div class="post-entry">
       <%= post.content%>
+      <a class="readmore" href="/blog/v/<%= post.id %>">Read More</a>
      </div>
   </div>
-  <a href="/blog/v/<%= post.id %>">Read More</a>
 </article>
 <%end%>
   <% end %>
