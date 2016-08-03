@@ -1,25 +1,18 @@
 <br><br><br>
+
 <style>
+  .readmore{
+    display: none;
+  }
   img{
     display: block;
     max-width: 100%;
     height: auto;
   }
 </style>
-<style>
-  .readmore{
-    display: none;
-  }
-    img{
-
-   img{
-     display: block;
-     max-width: 100%;
-     height: auto;
-   }
-</style>
 <div class="row">
-
+<div class="col-md-2"></div>
+  <div class="col-md-8">
 <% if @blog.draft != 1 || session[:id] != nil %>
     <article class="row">
 
@@ -38,12 +31,14 @@
         </h3>
         <hr>
         <img src="<%= @blog.url %>">
-        <div class="post-entry img-responsive">
+        <div class="post-entry">
           <%= @blog.content%>
         </div>
       </div>
 
     </article>
 <%end%>
-
+    </div>
+</div>
+<div class="col-md-2"></div>
 </div>
