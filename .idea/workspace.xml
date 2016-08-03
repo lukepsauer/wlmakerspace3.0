@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/one-page-wonder.css" afterPath="$PROJECT_DIR$/public/css/one-page-wonder.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blog.erb" afterPath="$PROJECT_DIR$/views/blog.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blogMake.erb" afterPath="$PROJECT_DIR$/views/blogMake.erb" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +22,7 @@
     <SUITE FILE_PATH="coverage/startbootstrap-one-page-wonder-1.0.4@app.coverage" NAME="app Coverage Results" MODIFIED="1453253585467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="startbootstrap-one-page-wonder-1.0.4" />
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="C:\Users\nqmet\RubymineProjects\wlmakerspace" />
   </component>
   <component name="DatabaseView">
     <option name="GROUP_SCHEMA" value="true" />
@@ -184,11 +183,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogMake.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blogMake.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="244">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -214,11 +213,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="one-page-wonder.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="one-page-wonder.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="385" column="14" selection-start-line="385" selection-start-column="14" selection-end-line="385" selection-end-column="14" />
+            <state relative-caret-position="390">
+              <caret line="316" column="22" selection-start-line="316" selection-start-column="22" selection-end-line="316" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -278,10 +277,10 @@
         <option value="$PROJECT_DIR$/public/js/js.js" />
         <option value="$PROJECT_DIR$/public/js/blogHide.js" />
         <option value="$PROJECT_DIR$/views/blogPage.erb" />
-        <option value="$PROJECT_DIR$/views/blogMake.erb" />
         <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/views/blog.erb" />
         <option value="$PROJECT_DIR$/public/css/one-page-wonder.css" />
+        <option value="$PROJECT_DIR$/views/blogMake.erb" />
       </list>
     </option>
   </component>
@@ -672,14 +671,7 @@
       <workItem from="1470092841599" duration="146000" />
       <workItem from="1470160763940" duration="9465000" />
       <workItem from="1470179451482" duration="6962000" />
-      <workItem from="1470261275431" duration="3029000" />
-    </task>
-    <task id="LOCAL-00050" summary="Adding the aabout the staff page">
-      <created>1469287586456</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1469287586459</updated>
+      <workItem from="1470261275431" duration="3244000" />
     </task>
     <task id="LOCAL-00051" summary="Removeing the about staff page from the navbar">
       <created>1470160801611</created>
@@ -1017,11 +1009,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470264191153</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Testing markdown for blog">
+      <created>1470264313432</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1470264313432</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25680000" />
+    <option name="totallyTimeSpent" value="25895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1401,14 +1400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1435,8 +1426,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="385" column="14" selection-start-line="385" selection-start-column="14" selection-end-line="385" selection-end-column="14" />
+        <state relative-caret-position="390">
+          <caret line="316" column="22" selection-start-line="316" selection-start-column="22" selection-end-line="316" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding />
         </state>
       </provider>
