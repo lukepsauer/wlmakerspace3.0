@@ -53,7 +53,7 @@ class WLMS < Sinatra::Base
   end
   get '/blog/edit/:id' do
     @blog = Post.first(:id => params[:id])
-    @content = Kramdown::Document.new(@blog.content, :input => 'html').to_markdown
+    @content = @blog.content_raw
     @u = User.first(:id => session[:id])
     @u.perm == 3 ? @publishC = true :  @publishC = false
     @isEdit = true # I use the same view for both creating and editing the blog, but there need to be slightly different controls
@@ -175,6 +175,7 @@ class WLMS < Sinatra::Base
     blog = Post.new
     blog.title = params[:title]
     blog.content = Kramdown::Document.new(content).to_html
+    blog.content_raw = content
     blog.date =params[:date]
     blog.draft   = (params.has_key? 'draft')? 1:0
     blog.type = "blog"
@@ -190,11 +191,12 @@ class WLMS < Sinatra::Base
     redirect '/blog'
   end
   post '/blog/edit/:id' do
+    content = params[:content]
     blog = Post.first(:id => params[:id])
     blog.title = params[:title]
     blog.content = Kramdown::Document.new(content).to_html
-
-    blog.date =params[:date]
+    blog.content_raw = content
+    blog.date = params[:date]
     blog.draft   = (params.has_key? 'draft')? 1:0
     blog.type = "blog"
     blog.save

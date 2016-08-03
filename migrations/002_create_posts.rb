@@ -6,7 +6,7 @@ Sequel.migration do
       String :title
       String :url
       String :content
-      String
+      String :content_raw
       Date :date
       String :type
       Integer :draft
