@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blogMake.erb" afterPath="$PROJECT_DIR$/views/blogMake.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blogPage.erb" afterPath="$PROJECT_DIR$/views/blogPage.erb" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
@@ -157,8 +156,8 @@
       <file leaf-file-name="blogPage.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/blogPage.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="108">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -577,14 +576,7 @@
       <workItem from="1470092841599" duration="146000" />
       <workItem from="1470160763940" duration="9465000" />
       <workItem from="1470179451482" duration="6962000" />
-      <workItem from="1470261275431" duration="6012000" />
-    </task>
-    <task id="LOCAL-00061" summary="Testing markdown for blog">
-      <created>1470235204570</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1470235204570</updated>
+      <workItem from="1470261275431" duration="6185000" />
     </task>
     <task id="LOCAL-00062" summary="Testing markdown for blog">
       <created>1470235535834</created>
@@ -922,11 +914,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470267282110</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Testing markdown for blog">
+      <created>1470267296116</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1470267296116</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28663000" />
+    <option name="totallyTimeSpent" value="28836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -934,7 +933,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25053304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20969442" sideWeight="0.510661" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20969442" sideWeight="0.510661" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25825346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20969442" sideWeight="0.48933902" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1361,8 +1360,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/blogPage.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="108">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
