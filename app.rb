@@ -170,9 +170,10 @@ class WLMS < Sinatra::Base
     redirect '/#contact'
   end
   post '/blog/new' do
+    content = params[:content]
     blog = Post.new
     blog.title = params[:title]
-    blog.content = Kramdown::Document.new(params[:content]).to_html
+    blog.content = Kramdown::Document.new(content).to_html
     blog.date =params[:date]
     blog.draft   = (params.has_key? 'draft')? 1:0
     blog.type = "blog"
