@@ -1,7 +1,6 @@
 <div class="container">
   <!--I removed .reverse_order, to see if that was doing anything-->
   <% @blog.each do |post| %>
-      <% if post.draft != 1 || session[:id] != nil %>
           <article class="row">
             <div class="col-lg-2 col-md-3 col-sm-3" style="padding-bottom: 5%">
               <p class="clearfix">
@@ -37,6 +36,5 @@
 
           </article>
       <%end%>
-  <% end %>
 
 </div>
