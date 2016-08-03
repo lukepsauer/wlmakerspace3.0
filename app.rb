@@ -60,6 +60,7 @@ class WLMS < Sinatra::Base
     erb :blogMake
   end
   get '/blog/v/:id' do
+    @u = User.first(:id => session[:id])
     @blog = Post.first(:id => params[:id])
     erb :blogPage
   end

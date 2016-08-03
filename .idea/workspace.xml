@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
+    <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="Testing markdown for blog">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blogPage.erb" afterPath="$PROJECT_DIR$/views/blogPage.erb" />
     </list>
@@ -133,11 +133,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.5714286">
+              <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -153,12 +153,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogPage.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="002_create_posts.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/migrations/002_create_posts.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blogPage.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/blogPage.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63141996">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-              <folding />
+            <state vertical-scroll-proportion="-14.903226">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <folding>
+                <element signature="e#121#147#0#HTML" expanded="true" />
+                <element signature="e#206#228#0#HTML" expanded="true" />
+                <element signature="e#491#513#0#HTML" expanded="true" />
+                <element signature="e#708#730#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,9 +181,14 @@
       <file leaf-file-name="blog.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/blog.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.225807">
-              <caret line="65" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-19.935484">
+              <caret line="61" column="7" selection-start-line="26" selection-start-column="6" selection-end-line="61" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#article#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#article#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#article#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#h3#0;n#div#1;n#article#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,13 +230,6 @@
               <caret line="381" column="9" selection-start-line="381" selection-start-column="9" selection-end-line="381" selection-end-column="9" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Makerspace_Logo.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/Makerspace_Logo.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -274,10 +287,10 @@
         <option value="$PROJECT_DIR$/views/blogMake.erb" />
         <option value="$PROJECT_DIR$/public/js/js.js" />
         <option value="$PROJECT_DIR$/public/js/blogHide.js" />
-        <option value="$PROJECT_DIR$/views/blog.erb" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/public/css/one-page-wonder.css" />
+        <option value="$PROJECT_DIR$/views/blog.erb" />
         <option value="$PROJECT_DIR$/views/blogPage.erb" />
+        <option value="$PROJECT_DIR$/app.rb" />
       </list>
     </option>
   </component>
@@ -664,12 +677,6 @@
       <workItem from="1470160763940" duration="9465000" />
       <workItem from="1470179451482" duration="6962000" />
     </task>
-    <task id="LOCAL-00038" summary="Quill integration">
-      <created>1466615910712</created>
-      <option name="number" value="00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1466615910712</updated>
-    </task>
     <task id="LOCAL-00039" summary="Quill integration">
       <created>1466616128461</created>
       <option name="number" value="00039" />
@@ -958,7 +965,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470255073354</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Testing markdown for blog">
+      <created>1470255434477</created>
+      <option name="number" value="00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1470255434477</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1282,14 +1295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/002_create_posts.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/ms_logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1357,22 +1362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/blog.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.225807">
-          <caret line="65" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.903226">
@@ -1381,10 +1370,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/002_create_posts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/blog.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.935484">
+          <caret line="61" column="7" selection-start-line="26" selection-start-column="6" selection-end-line="61" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#article#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#article#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#article#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#h3#0;n#div#1;n#article#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/blogPage.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63141996">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state vertical-scroll-proportion="-14.903226">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="e#121#147#0#HTML" expanded="true" />
+            <element signature="e#206#228#0#HTML" expanded="true" />
+            <element signature="e#491#513#0#HTML" expanded="true" />
+            <element signature="e#708#730#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5714286">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
           <folding />
         </state>
       </provider>
