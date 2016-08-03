@@ -95,6 +95,7 @@ class WLMS < Sinatra::Base
     erb :about
   end
 #-------------POST ROUTES---------------------
+
   post '/user/auth' do
 
     @u = User.first(:email => params[:email])
@@ -177,7 +178,7 @@ class WLMS < Sinatra::Base
     redirect '/#contact'
   end
   post '/blog/new' do
-    content = params[:content]
+    content = ''
     blog = Post.new
     blog.title = params[:title]
     blog.content = Kramdown::Document.new(content).to_html
