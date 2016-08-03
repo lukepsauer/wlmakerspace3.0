@@ -1,33 +1,33 @@
 <article class="row">
   <div class="col-lg-2 col-md-3 col-sm-3" style="padding-bottom: 5%">
     <p class="clearfix">
-      <span class="day" style="color: #8e2522"><%= post.date.strftime("%d") %></span><span class="month-year"><b><%= post.date.strftime("%^b") %></b><br><%= post.date.strftime("%Y") %></span>
+      <span class="day" style="color: #8e2522"><%= blog.date.strftime("%d") %></span><span class="month-year"><b><%= blog.date.strftime("%^b") %></b><br><%= blog.date.strftime("%Y") %></span>
     </p>
     <ul class="list-unstyled">
 
 
-      <li><span class="blog-readable"><i class="fa fa-user" style="color: #8e2522"></i> By <%=@authors.first(:id => post.author).firstname %></span></li>
+      <li><span class="blogg-readable"><i class="fa fa-user" style="color: #8e2522"></i> By <%=@authors.first(:id => blog.author).firstname %></span></li>
 
     </ul>
   </div>
 
   <div class="col-lg-10 col-md-9 col-sm-9">
-    <h3><a href="/blog/v/<%= post.id%>" style="color: #8e2522"><%= post.title%></a>
-      <% if post.draft == 1 %>
+    <h3><a href="/blogg/v/<%= blog.id%>" style="color: #8e2522"><%= blog.title%></a>
+      <% if blog.draft == 1 %>
           <small>(Draft)</small>
       <% end %>
       <%if session[:visited]%>
-          <%if @u.perm >= 2 || (@u.id == post.author && post.draft==1) %>
+          <%if @u.perm >= 2 || (@u.id == blog.author && blog.draft==1) %>
 
               <a type="submit" class="delete"><i class="fa fa-times fa-lg"></i></a>
-              <a class="delete" href="/blog/edit/<%= post.id%>"><i class="fa fa-pencil fa-lg"></i></a>
+              <a class="delete" href="/blogg/edit/<%= blog.id%>"><i class="fa fa-pencil fa-lg"></i></a>
           <%end%>
       <%end%>
     </h3>
     <hr>
-    <img src="<%= post.url %>">
-    <div class="post-entry">
-      <%= post.content%>
+    <img src="<%= blog.url %>">
+    <div class="blog-entry">
+      <%= blog.content%>
     </div>
   </div>
 
