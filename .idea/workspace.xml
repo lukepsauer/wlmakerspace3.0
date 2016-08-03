@@ -157,7 +157,7 @@
         <entry file="file://$PROJECT_DIR$/views/blogPage.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+              <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -649,12 +649,6 @@
       <workItem from="1470160763940" duration="9465000" />
       <workItem from="1470179451482" duration="6962000" />
     </task>
-    <task id="LOCAL-00030" summary="Changed a few style for the login dropdown">
-      <created>1454711656564</created>
-      <option name="number" value="00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1454711656564</updated>
-    </task>
     <task id="LOCAL-00031" summary="Changing the name conventions">
       <created>1466613910170</created>
       <option name="number" value="00031" />
@@ -943,7 +937,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470252484441</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Testing markdown for blog">
+      <created>1470253316114</created>
+      <option name="number" value="00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1470253316114</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1368,7 +1368,7 @@
     <entry file="file://$PROJECT_DIR$/views/blogPage.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="18" />
           <folding />
         </state>
       </provider>
