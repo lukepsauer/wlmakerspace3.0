@@ -11,7 +11,11 @@
 </header>
 
 <div class="center">
-
+<style>
+  .hideContent{
+    dispay: hidden;
+  }
+</style>
   <%if session[:visited]%>
       <a id="newblogpost" href="/blog/new">New Post <i class="fa fa-plus"></i></a>
       <hr>
