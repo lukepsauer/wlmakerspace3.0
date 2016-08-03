@@ -5,7 +5,7 @@
     display: none;
   }
 </style>
-
+<div class="center">
 <% if @blog.draft != 1 || session[:id] != nil %>
     <article class="row">
 
@@ -31,4 +31,4 @@
 
     </article>
 <%end%>
-
+</div>
