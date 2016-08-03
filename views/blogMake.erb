@@ -17,11 +17,11 @@
       <% #Time here is for display purposes only. The real time is set in the post.  %>
     </div>
   </div>
-  <textarea name="content" class="form-control" rows="32"><%= @isEdit ? @blog.content_raw : '[Read More](/blog/v/)<br>
+  <textarea name="content" class="form-control" rows="32"><%= @isEdit ? @blog.content_raw : "[Read More](/blog/v/#{body.id})<br>
 {: .hiddenContent}<br><br>
 
 
-{: .hiddenContent /}'%></textarea>
+{: .hiddenContent /}"%></textarea>
 
 
   <br/>

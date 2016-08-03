@@ -186,8 +186,8 @@
       <file leaf-file-name="blogMake.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="19" column="124" selection-start-line="19" selection-start-column="124" selection-end-line="19" selection-end-column="124" />
               <folding />
             </state>
           </provider>
@@ -671,14 +671,7 @@
       <workItem from="1470092841599" duration="146000" />
       <workItem from="1470160763940" duration="9465000" />
       <workItem from="1470179451482" duration="6962000" />
-      <workItem from="1470261275431" duration="2093000" />
-    </task>
-    <task id="LOCAL-00045" summary="Working on the google calendar integraqtion">
-      <created>1467435884203</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1467435884203</updated>
+      <workItem from="1470261275431" duration="2188000" />
     </task>
     <task id="LOCAL-00046" summary="Working on the google calendar integraqtion">
       <created>1469123595924</created>
@@ -1016,11 +1009,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470262964712</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Testing markdown for blog">
+      <created>1470263373216</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1470263373216</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24744000" />
+    <option name="totallyTimeSpent" value="24839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1434,8 +1434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        <state relative-caret-position="323">
+          <caret line="19" column="124" selection-start-line="19" selection-start-column="124" selection-end-line="19" selection-end-column="124" />
           <folding />
         </state>
       </provider>
