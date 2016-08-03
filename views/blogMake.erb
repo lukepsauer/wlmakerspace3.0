@@ -18,11 +18,13 @@
     </div>
   </div>
   <textarea name="content" class="form-control" rows="32"><%= @isEdit ? @blog.content_raw : '
-{: .hiddenContent}<br><br><br>
+<!-- Content here will appear in the preview -->
 
-Enter the infomation that you do not want on the preview
+{: .fullViewContent}
 
-{: .hiddenContent /}'%></textarea>
+<!-- Enter the infomation that you do not want on the preview -->
+
+{: .fullViewContent /}'%></textarea>
 
 
   <br/>
