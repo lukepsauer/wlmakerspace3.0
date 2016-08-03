@@ -53,7 +53,7 @@ class WLMS < Sinatra::Base
   end
   get '/blog/edit/:id' do
     @blog = Post.first(:id => params[:id])
-    @content = Kramdown::Document.new(@blog.content, input => 'html').to_kramdown
+    @content = Kramdown::Document.new(@blog.content, :input => 'html').to_kramdown
     @u = User.first(:id => session[:id])
     @u.perm == 3 ? @publishC = true :  @publishC = false
     @isEdit = true # I use the same view for both creating and editing the blog, but there need to be slightly different controls
