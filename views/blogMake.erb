@@ -17,7 +17,7 @@
       <% #Time here is for display purposes only. The real time is set in the post.  %>
     </div>
   </div>
-  <textarea name="content" class="form-control" rows="8" value="<%= @isEdit ? @content : ""%>"></textarea>
+  <textarea name="content" class="form-control" rows="8" value="<%= @isEdit ? Kramdown::Document.new(@blog.content, :input => 'html').to_kramdown : ''%>"></textarea>
 
 
   <br/>
