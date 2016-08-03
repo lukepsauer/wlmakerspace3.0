@@ -175,7 +175,7 @@ class WLMS < Sinatra::Base
     blog = Post.new
     blog.title = params[:title]
     blog.content = Kramdown::Document.new(content).to_html
-    blog.content_raw = content
+    blog.content_raw = params[:content]
     blog.date =params[:date]
     blog.draft   = (params.has_key? 'draft')? 1:0
     blog.type = "blog"
