@@ -172,7 +172,7 @@ class WLMS < Sinatra::Base
   post '/blog/new' do
     blog = Post.new
     blog.title = params[:title]
-    blog.content = Kramdown::Document.new(params[:content], input => 'markdown').to_html
+    blog.content = Kramdown::Document.new(params[:content]).to_html
     blog.date =params[:date]
     blog.draft   = (params.has_key? 'draft')? 1:0
     blog.type = "blog"
