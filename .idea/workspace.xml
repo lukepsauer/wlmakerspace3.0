@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/blogMake.erb" afterPath="$PROJECT_DIR$/views/blogMake.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -133,11 +133,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1283">
-              <caret line="187" column="9" selection-start-line="187" selection-start-column="9" selection-end-line="187" selection-end-column="9" />
+            <state relative-caret-position="391">
+              <caret line="241" column="13" selection-start-line="241" selection-start-column="13" selection-end-line="241" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -173,11 +173,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogMake.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blogMake.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+            <state relative-caret-position="430">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -279,8 +279,8 @@
         <option value="$PROJECT_DIR$/views/layouts.erb" />
         <option value="$PROJECT_DIR$/migrations/002_create_posts.rb" />
         <option value="$PROJECT_DIR$/views/landing.erb" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/views/blogMake.erb" />
+        <option value="$PROJECT_DIR$/app.rb" />
       </list>
     </option>
   </component>
@@ -670,14 +670,7 @@
       <workItem from="1470012058781" duration="1271000" />
       <workItem from="1470092841599" duration="146000" />
       <workItem from="1470160763940" duration="9465000" />
-      <workItem from="1470179451482" duration="6626000" />
-    </task>
-    <task id="LOCAL-00020" summary="Removing the classic theme for datepicker to see if it makes it more mobile friendly">
-      <created>1454551518917</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1454551518917</updated>
+      <workItem from="1470179451482" duration="6962000" />
     </task>
     <task id="LOCAL-00021" summary="Testing a delete button">
       <created>1454589286180</created>
@@ -1015,11 +1008,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470237598259</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Testing markdown for blog">
+      <created>1470237787857</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1470237787857</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22315000" />
+    <option name="totallyTimeSpent" value="22651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1439,18 +1439,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
+    <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1283">
-          <caret line="187" column="9" selection-start-line="187" selection-start-column="9" selection-end-line="187" selection-end-column="9" />
+        <state relative-caret-position="430">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/blogMake.erb">
+    <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        <state relative-caret-position="391">
+          <caret line="241" column="13" selection-start-line="241" selection-start-column="13" selection-end-line="241" selection-end-column="13" />
           <folding />
         </state>
       </provider>

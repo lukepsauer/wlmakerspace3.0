@@ -59,6 +59,9 @@ class WLMS < Sinatra::Base
     @isEdit = true # I use the same view for both creating and editing the blog, but there need to be slightly different controls
     erb :blogMake
   end
+  get '/blog/v/:id' do
+
+  end
   get '/settings' do
     if session[:visited]
       puts @test
@@ -237,7 +240,7 @@ class WLMS < Sinatra::Base
   post '/blog/del/:id' do
     p = Post.first(:id => params[:id])
     p.destroy
-    redirect request.env["HTTP_REFERER"]
+    redirect '/blog'
   end
   post '/post/delete/:id' do
     p = Post.first(:id => params[:id])
