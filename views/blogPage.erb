@@ -6,11 +6,6 @@
 
 <% if @blog.draft != 1 || session[:id] != nil %>
     <article class="row">
-      <div class="col-lg-2 col-md-3 col-sm-3" style="padding-bottom: 5%">
-        <p class="clearfix">
-          <span class="day" style="color: #8e2522"><%= @blog.date.strftime("%d") %></span><span class="month-year"><b><%= @blog.date.strftime("%^b") %></b><br><%= @blog.date.strftime("%Y") %></span>
-        </p>
-      </div>
 
       <div class="col-lg-10 col-md-9 col-sm-9">
         <h3><a href="/blog/v/<%= @blog.id%>" style="color: #8e2522"><%= @blog.title%></a>
