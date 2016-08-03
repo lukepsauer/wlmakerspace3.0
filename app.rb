@@ -60,7 +60,8 @@ class WLMS < Sinatra::Base
     erb :blogMake
   end
   get '/blog/v/:id' do
-
+    @blog = Post.first(:id => params[:id])
+    erb :blogPage
   end
   get '/settings' do
     if session[:visited]
@@ -174,7 +175,7 @@ class WLMS < Sinatra::Base
     redirect '/#contact'
   end
   post '/blog/new' do
-    content = params[:content] + "[more]: /blog/v/#{params[:id]}"
+    content = params[:content]
     blog = Post.new
     blog.title = params[:title]
     blog.content = Kramdown::Document.new(content).to_html
@@ -194,7 +195,7 @@ class WLMS < Sinatra::Base
     redirect '/blog'
   end
   post '/blog/edit/:id' do
-    content = params[:content] + "[more]: /blog/v/#{params[:id]}"
+    content = params[:content]
     blog = Post.first(:id => params[:id])
     blog.title = params[:title]
     blog.content = Kramdown::Document.new(content).to_html
