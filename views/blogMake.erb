@@ -17,37 +17,14 @@
       <% #Time here is for display purposes only. The real time is set in the post.  %>
     </div>
   </div>
-
+  <textarea name="content" class="form-control" rows="8"></textarea>
 
 
   <br/>
 </form>
 </div>
 <br/>
-<label>Header Image</label>
-<input type="file" name="myfile">
 
-
-
-<!-- Create the toolbar container -->
-<div id="toolbar">
-  <button class="ql-bold">Bold</button>
-  <button class="ql-italic">Italic</button>
-</div>
-
-<!-- Create the editor container -->
-<div id="editor">
-
-</div>
-
-<!-- Include the Quill library -->
-<script src="//cdn.quilljs.com/0.20.1/quill.js"></script>
-
-<!-- Initialize Quill editor -->
-<script>
-  var quill = new Quill('#editor');
-  quill.addModule('toolbar', { container: '#toolbar' });
-</script>
 
 
 
