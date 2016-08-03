@@ -194,7 +194,7 @@ class WLMS < Sinatra::Base
     redirect '/blog'
   end
   post '/blog/edit/:id' do
-    content = params[:content] +  + "[more]: /blog/v/#{params[:id]}"
+    content = params[:content] + "[more]: /blog/v/#{params[:id]}"
     blog = Post.first(:id => params[:id])
     blog.title = params[:title]
     blog.content = Kramdown::Document.new(content).to_html
