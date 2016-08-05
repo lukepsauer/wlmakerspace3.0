@@ -24,7 +24,8 @@
           <li><span class="blog-readable"><i class="fa fa-user" style="color: #8e2522"></i> By <%=@authors.first(:id => @blog.author).firstname %></span></li>
 
         </ul>
-
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-9">
         <h3><a href="/blog/v/<%= @blog.id%>" style="color: #8e2522"><%= @blog.title%></a>
           <% if @blog.draft == 1 %>
               <small>(Draft)</small>
