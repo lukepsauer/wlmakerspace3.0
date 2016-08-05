@@ -13,7 +13,7 @@
 
 <div class="container">
 <% if @blog.draft != 1 || session[:id] != nil %>
-    <article class="row">
+
       <div class="col-lg-10 col-md-9 col-sm-9">
         <p class="clearfix">
           <span class="day" style="color: #8e2522"><%= @blog.date.strftime("%d") %></span><span class="month-year"><b><%= @blog.date.strftime("%^b") %></b><br><%= @blog.date.strftime("%Y") %></span>
@@ -46,6 +46,5 @@
         </div>
 
       </div>
-    </article>
 <%end%>
 </div>
