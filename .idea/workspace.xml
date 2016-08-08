@@ -217,7 +217,7 @@
         <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.872093">
-              <caret line="390" column="4" selection-start-line="390" selection-start-column="4" selection-end-line="390" selection-end-column="4" />
+              <caret line="390" column="15" selection-start-line="390" selection-start-column="15" selection-end-line="390" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -650,12 +650,6 @@
       <workItem from="1470179451482" duration="6962000" />
       <workItem from="1470261275431" duration="7589000" />
     </task>
-    <task id="LOCAL-00079" summary="Testing markdown for blog">
-      <created>1470253316114</created>
-      <option name="number" value="00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1470253316114</updated>
-    </task>
     <task id="LOCAL-00080" summary="Testing markdown for blog">
       <created>1470253423620</created>
       <option name="number" value="00080" />
@@ -944,7 +938,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470666481334</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="Fixing the title of blog page">
+      <created>1470666592751</created>
+      <option name="number" value="00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1470666592751</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1384,7 +1384,7 @@
     <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.872093">
-          <caret line="390" column="4" selection-start-line="390" selection-start-column="4" selection-end-line="390" selection-end-column="4" />
+          <caret line="390" column="15" selection-start-line="390" selection-start-column="15" selection-end-line="390" selection-end-column="15" />
           <folding />
         </state>
       </provider>
