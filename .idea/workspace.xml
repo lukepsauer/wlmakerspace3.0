@@ -176,8 +176,8 @@
       <file leaf-file-name="blog.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/blog.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07971015">
-              <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.039855074">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -650,12 +650,6 @@
       <workItem from="1470179451482" duration="6962000" />
       <workItem from="1470261275431" duration="7589000" />
     </task>
-    <task id="LOCAL-00077" summary="Testing markdown for blog">
-      <created>1470249818208</created>
-      <option name="number" value="00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1470249818208</updated>
-    </task>
     <task id="LOCAL-00078" summary="Testing markdown for blog">
       <created>1470252484441</created>
       <option name="number" value="00078" />
@@ -944,7 +938,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470666258025</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="Fixing the title of blog page">
+      <created>1470666406328</created>
+      <option name="number" value="00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1470666406328</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1383,8 +1383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/blog.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07971015">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.039855074">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
