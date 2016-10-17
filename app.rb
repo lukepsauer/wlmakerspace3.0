@@ -94,6 +94,9 @@ class WLMS < Sinatra::Base
   get '/about' do
     erb :about
   end
+  get '/landing-beta' do
+    erb 'landing-beta'
+  end
 #-------------POST ROUTES---------------------
 
   post '/user/auth' do
