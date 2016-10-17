@@ -157,25 +157,34 @@ class WLMS < Sinatra::Base
   end
   post '/test/email' do
     user = User.first(:id => session[:id])
-    Pony.mail(
-        :to => 'nqmetke@gmail.com',
-        :from => 'betamakerspace@gmail.com',
-        :subject=> "New Training Request from #{params[:firstname]} #{params[:lastname]}",
-        :body => "This person would like to train on #{params[:date]} at #{params[:time]}. If you wish to contact #{params[:firstname]}, his/her email is #{params[:email]}",
-        :via => :smtp,
-        :via_options =>{
-            :address              => 'smtp.gmail.com',
-            :port                 => '587',
-            :enable_starttls_auto => true,
-            :user_name            => 'betamakerspace',
-            :password             => 'wplmakerspace',
-            :authentication       => :plain,
-            :domain               => 'localhost.localdomain'
+    training = Training.new
+    training.trainee_name = params[:firstname] + " " + params[:lastname]
+    training.trainee_email = params[:email]
+    training.date = params[:date]
+    training.time = params[:time]
+    training.auth = false
+    training.save
+
+#      Pony.mail(
+#        :to => 'nqmetke@gmail.com',
+#        :from => 'betamakerspace@gmail.com',
+#        :subject=> "New Training Request from #{params[:firstname]} #{params[:lastname]}",
+#        :body => "This person would like to train on #{params[:date]} at #{params[:time]}. If you wish to contact #{params[:firstname]}, his/her email is #{params[:email]}",
+#        :via => :smtp,
+#        :via_options =>{
+#            :address              => 'smtp.gmail.com',
+#            :port                 => '587',
+#            :enable_starttls_auto => true,
+#            :user_name            => 'betamakerspace',
+#            :password             => 'wplmakerspace',
+#            :authentication       => :plain,
+#            :domain               => 'localhost.localdomain'
 
 
-        }  )
+#        }  )
     puts "Hey!"
     redirect '/#contact'
+
   end
   post '/blog/new' do
     content = ''

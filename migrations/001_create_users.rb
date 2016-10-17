@@ -8,6 +8,8 @@ Sequel.migration do
       String :firstname
       String :lastname
       Integer :perm
+      Date :coach_date
+      Time :coach_time
     end
   end
 
