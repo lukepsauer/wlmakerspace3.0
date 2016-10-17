@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/migrations/003_create_activity.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/creative.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/creative.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/landing-beta.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/offering.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/001_create_users.rb" afterPath="$PROJECT_DIR$/migrations/001_create_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models.rb" afterPath="$PROJECT_DIR$/models.rb" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -664,12 +656,6 @@
       <workItem from="1470179451482" duration="6962000" />
       <workItem from="1470261275431" duration="7589000" />
     </task>
-    <task id="LOCAL-00082" summary="Testing markdown for blog">
-      <created>1470253955306</created>
-      <option name="number" value="00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1470253955306</updated>
-    </task>
     <task id="LOCAL-00083" summary="Testing markdown for blog">
       <created>1470254401517</created>
       <option name="number" value="00083" />
@@ -958,7 +944,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470671552520</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="Adding a beta landing page, so i can make it look pretty">
+      <created>1476735387328</created>
+      <option name="number" value="00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1476735387328</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -970,6 +962,7 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2289823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.49304348" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33586955" sideWeight="0.510661" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25825346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -980,7 +973,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.49304348" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1044,7 +1036,8 @@
     <MESSAGE value="Removeing the about staff page from the navbar" />
     <MESSAGE value="Testing markdown for blog" />
     <MESSAGE value="Fixing the title of blog page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing the title of blog page" />
+    <MESSAGE value="Adding a beta landing page, so i can make it look pretty" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding a beta landing page, so i can make it look pretty" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
