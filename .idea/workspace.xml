@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6fcf40c-9f0e-4c54-8ba1-7b540c5b4286" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
     </list>
     <ignored path="startbootstrap-one-page-wonder-1.0.4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -132,16 +133,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="one-page-wonder.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/one-page-wonder.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.290323">
-              <caret line="389" column="45" selection-start-line="389" selection-start-column="45" selection-end-line="389" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/vendor/jquery/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -177,6 +168,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.60273975">
+              <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -222,7 +223,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="creative.min.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="creative.min.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/creative.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -282,12 +283,12 @@
         <option value="$PROJECT_DIR$/views/blog.erb" />
         <option value="$PROJECT_DIR$/migrations/003_create_activity.rb" />
         <option value="$PROJECT_DIR$/views/offering.erb" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/migrations/005_create_coach.rb" />
         <option value="$PROJECT_DIR$/migrations/004_create_training.rb" />
         <option value="$PROJECT_DIR$/models.rb" />
         <option value="$PROJECT_DIR$/migrations/001_create_users.rb" />
         <option value="$PROJECT_DIR$/views/landing-beta.erb" />
+        <option value="$PROJECT_DIR$/app.rb" />
       </list>
     </option>
   </component>
@@ -656,18 +657,6 @@
       <workItem from="1470179451482" duration="6962000" />
       <workItem from="1470261275431" duration="7589000" />
     </task>
-    <task id="LOCAL-00083" summary="Testing markdown for blog">
-      <created>1470254401517</created>
-      <option name="number" value="00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1470254401517</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Testing markdown for blog">
-      <created>1470254560867</created>
-      <option name="number" value="00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1470254560867</updated>
-    </task>
     <task id="LOCAL-00085" summary="Testing markdown for blog">
       <created>1470254596352</created>
       <option name="number" value="00085" />
@@ -950,7 +939,19 @@
       <option name="project" value="LOCAL" />
       <updated>1476735387328</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Adding a beta landing page, so i can make it look pretty">
+      <created>1476735450017</created>
+      <option name="number" value="00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1476735450017</updated>
+    </task>
+    <task id="LOCAL-00133" summary="Adding a beta landing page, so i can make it look pretty">
+      <created>1476736281880</created>
+      <option name="number" value="00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1476736281880</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -958,9 +959,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="952" y="0" width="976" height="1038" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2289823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2289823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.49304348" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33586955" sideWeight="0.510661" order="8" side_tool="true" content_ui="tabs" />
@@ -1269,14 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1401,6 +1394,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60273975">
+          <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
           <folding />
         </state>
       </provider>
